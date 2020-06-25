@@ -1,0 +1,12 @@
+---
+authors:
+  - firstname: John
+    surname: Smith
+
+editors:
+  - firstname: Jane
+    surname: Smith
+
+other_contributors:
+  - John Doe
+  - Jane Doe

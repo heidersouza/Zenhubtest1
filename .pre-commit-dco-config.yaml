@@ -1,0 +1,17 @@
+---
+exclude: '^$'
+fail_fast: false
+repos:
+  - repo: git@github.com:RedHatTraining/dco-converter.git
+    rev: v0.1.11
+    hooks:
+      - id: ods-to-yaml
+        always_run: yes
+
+  - repo: git@github.com:RedHatTraining/guide-templater.git
+    rev: v1.2.2
+    hooks:
+      - id: render-templates
+        always_run: yes
+      - id: render-templates3
+        always_run: yes
