@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % common_entities SYSTEM "../../../common.ent">
+%common_entities;
+]>
+<section id="monitor-log-multchoice">
+  <!-- When this section is ready for EA, create a symlink for the log-mc-content.xml file
+    to the ../../../sg-chapters/topics/monitor/log-mc-content.xml file.
+    EX:
+    $> ln -s ../../../sg-chapters/topics/monitor/log-mc-content.xml log-mc-content.xml -->
+
+  <title>Describing OpenShift Log Aggregation</title>
+
+  <task role="MultChoice" id="monitor-log-multchoice-task">
+    <xi:include xmlns:xi="http://www.w3.org/2003/XInclude" href="log-mc-content.xml" xpointer="xpointer(/section/task/*)">
+      <xi:fallback>
+        <title>Describing OpenShift Log Aggregation</title>
+        <procedure>
+          <step>
+            <para>
+              Quiz questions are not yet available.
+            </para>
+          </step>
+        </procedure>
+      </xi:fallback>
+    </xi:include>
+  </task>
+</section>

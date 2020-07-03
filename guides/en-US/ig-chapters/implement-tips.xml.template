@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % common_entities SYSTEM "../common.ent">
+%common_entities;
+]>
+
+<!--   Modify the first paragraph in the first subsection, "Introductory Paragraph".
+
+       If no tips or takeaways are required, delete the second sub-section, "Instructor Tips and Tricks".
+
+       If there are tips or take aways, fill out this list,
+       and move the file from:
+
+       tips.xml.template to tips.xml
+-->
+
+<section>
+  <title>Author IG Content</title>
+
+  <section>
+    <title>Introductory Paragraph</title>
+
+    <!-- any content in this section is added at the beginning of IG chapter.
+         try to keep this content short, as it could affect rendering of the
+         chapter front matter in the IG...
+    -->
+
+    <para>
+      Include an overview of the chapter here for the instructor.
+    </para>
+  </section>
+
+  <section>
+    <title>Instructor Tips and Suggestions</title>
+
+    <itemizedlist>
+      <listitem>
+        <para>
+          Tip 1
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          Tip 2
+        </para>
+      </listitem>
+    </itemizedlist>
+  </section>
+</section>
+

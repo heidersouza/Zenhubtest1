@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % common_entities SYSTEM "../../../common.ent">
+%common_entities;
+]>
+<section id="start-architecture-lecture">
+  <title>Describing Agile Architecture Patterns</title>
+
+  <section>
+    <title>Objectives</title>
+
+    <para>
+      After completing this section, you should be able to describe the major patterns implemented in microservice architectures.
+    </para>
+  </section>
+
+  <!-- The file below contains the body of this section.
+    This supports dynamic changes to the DCO and/or course structure. -->
+
+  <xi:include xmlns:xi="http://www.w3.org/2003/XInclude" href="architecture-lecture-content.xml" xpointer="xpointer(/section/*[not(self::title)] )">
+    <xi:fallback>
+      <section>
+        <title>Under Development</title>
+
+        <para>
+          This section is still under development.
+        </para>
+      </section>
+    </xi:fallback>
+  </xi:include>
+
+  <!-- References are **NOT** generated from entries in the DCO yet.
+    You should include references in the architecture-lecture-content.xml file. -->
+</section>

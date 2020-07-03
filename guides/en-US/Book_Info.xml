@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE bookinfo PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % common_entities SYSTEM "common.ent" >
+%common_entities;
+]>
+<!--UPDATED March 6, 2015: Including the new <invpartnumber> and <pubdate> tags changes the behavior of the file: <invpartnumber> causes <invpartnumber> to be the SKU, <title> to be the written course title, and <subtitle> to change on the cover page.
+The <pubsnumber> which we've been using for the publication date is now used for the SVN number.
+The xi:include magic in the Book_Info.xml is used to include a file which flamel automatically updates with the number, but any number can be manually hard coded.
+If you render a course without the new tags, everything is rendered as before.-->
+<!--@brand redhat-training-xsl-->
+<bookinfo>
+  <!--New tag for course number-->
+  <invpartnumber>DO283</invpartnumber>
+  <!--New tag for course title-->
+  <title>Red Hat Application Development II: Building Microservices with Quarkus</title>
+  <!--Renders correct subtitle based on flamel for ilt or ROLE-->
+  <subtitle>Student Workbook</subtitle>
+  <productname>Red Hat Build of Quarkus</productname>
+  <productnumber>1.3.2</productnumber>
+  <edition>1</edition>
+  <!--This date used to be in pubsnumber-->
+  <pubdate>20190230</pubdate>
+  <!--During development, this should be uncommented.-->
+  <pubsnumber><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="pubsnum.xml" xpointer="xpointer(//pubsnumber/node())"/></pubsnumber>
+  <!-- Everything below is the same as before. -->
+  <authorgroup>
+    <author>
+      <firstname>John</firstname>
+      <surname>Smith</surname>
+    </author>
+    <editor>
+      <firstname>Jane</firstname>
+      <surname>Smith</surname>
+    </editor>
+  </authorgroup>
+  <abstract>
+    <para>
+      Contributors: John Doe, Jane Doe
+    </para>
+  </abstract>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Common_Content/Legal_Notice.xml"/>
+</bookinfo>

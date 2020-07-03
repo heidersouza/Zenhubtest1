@@ -1,0 +1,500 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE preface PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+]>
+<preface id="course-timing-preface">
+  <title>Course Timing</title>
+  <section>
+    <title>ILT</title>
+
+    <!-- ILT days must not exceed 390 minutes -->
+
+    <table frame="all">
+      <title>Day 1</title>
+      <tgroup cols="2">
+        <colspec colname="c1" colnum="1" colwidth="1.0*"/>
+        <colspec colname="c2" colnum="2" colwidth="1.0*"/>
+        <thead>
+          <row>
+            <entry>
+              Activity
+            </entry>
+            <entry>
+              Time
+            </entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry>
+              Introduction
+            </entry>
+            <entry>
+              2 minutes (12 minutes with i18n)
+            </entry>
+          </row>
+          <row>
+            <entry>
+              Chapter 1
+            </entry>
+            <entry>
+              100 minutes
+            </entry>
+          </row>
+          <row>
+            <entry>
+              Chapter 2
+            </entry>
+            <entry>
+              175 minutes
+            </entry>
+          </row>
+          <row>
+            <entry>
+              Chapter 3
+            </entry>
+            <entry>
+              102 minutes
+            </entry>
+          </row>
+          <row>
+            <entry>
+              Total for day
+            </entry>
+            <entry>
+              379 minutes (389 minutes with i18n)
+            </entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+
+    <table frame="all">
+      <title>Day 2</title>
+      <tgroup cols="2">
+        <colspec colname="c1" colnum="1" colwidth="1.0*"/>
+        <colspec colname="c2" colnum="2" colwidth="1.0*"/>
+        <thead>
+          <row>
+            <entry>
+              Activity
+            </entry>
+            <entry>
+              Time
+            </entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry>
+              Chapter 3
+            </entry>
+            <entry>
+              53 minutes
+            </entry>
+          </row>
+          <row>
+            <entry>
+              Chapter 4
+            </entry>
+            <entry>
+              145 minutes
+            </entry>
+          </row>
+          <row>
+            <entry>
+              Chapter 5
+            </entry>
+            <entry>
+              185 minutes
+            </entry>
+          </row>
+          <row>
+            <entry>
+              Chapter 6
+            </entry>
+            <entry>
+              2 minutes
+            </entry>
+          </row>
+          <row>
+            <entry>
+              Total for day
+            </entry>
+            <entry>
+              385 minutes
+            </entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+
+    <table frame="all">
+      <title>Day 3</title>
+      <tgroup cols="2">
+        <colspec colname="c1" colnum="1" colwidth="1.0*"/>
+        <colspec colname="c2" colnum="2" colwidth="1.0*"/>
+        <thead>
+          <row>
+            <entry>
+              Activity
+            </entry>
+            <entry>
+              Time
+            </entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry>
+              Chapter 6
+            </entry>
+            <entry>
+              143 minutes
+            </entry>
+          </row>
+          <row>
+            <entry>
+              Chapter 7
+            </entry>
+            <entry>
+              125 minutes
+            </entry>
+          </row>
+          <row>
+            <entry>
+              Chapter 8
+            </entry>
+            <entry>
+              102 minutes
+            </entry>
+          </row>
+          <row>
+            <entry>
+              Total for day
+            </entry>
+            <entry>
+              370 minutes
+            </entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+
+    <table frame="all">
+      <title>Day 4</title>
+      <tgroup cols="2">
+        <colspec colname="c1" colnum="1" colwidth="1.0*"/>
+        <colspec colname="c2" colnum="2" colwidth="1.0*"/>
+        <thead>
+          <row>
+            <entry>
+              Activity
+            </entry>
+            <entry>
+              Time
+            </entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry>
+              Chapter 8
+            </entry>
+            <entry>
+              33 minutes
+            </entry>
+          </row>
+          <row>
+            <entry>
+              Chapter 9
+            </entry>
+            <entry>
+              100 minutes
+            </entry>
+          </row>
+          <row>
+            <entry>
+              Chapter 10
+            </entry>
+            <entry>
+              85 minutes
+            </entry>
+          </row>
+          <row>
+            <entry>
+              Total for day
+            </entry>
+            <entry>
+              218 minutes
+            </entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+  </section>
+  <section>
+    <title>VLT</title>
+
+    <!-- VLT days must not exceed 310 minutes -->
+
+    <table frame="all">
+      <title>Day 1</title>
+      <tgroup cols="2">
+        <colspec colname="c1" colnum="1" colwidth="1.0*"/>
+        <colspec colname="c2" colnum="2" colwidth="1.0*"/>
+        <thead>
+          <row>
+            <entry>
+              Activity
+            </entry>
+            <entry>
+              Time
+            </entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry>
+              Introduction
+            </entry>
+            <entry>
+              2 minutes (12 minutes with i18n)
+            </entry>
+          </row>
+          <row>
+            <entry>
+              Chapter 1
+            </entry>
+            <entry>
+              100 minutes
+            </entry>
+          </row>
+          <row>
+            <entry>
+              Chapter 2
+            </entry>
+            <entry>
+              175 minutes
+            </entry>
+          </row>
+          <row>
+            <entry>
+              Chapter 3
+            </entry>
+            <entry>
+              2 minutes
+            </entry>
+          </row>
+          <row>
+            <entry>
+              Total for day
+            </entry>
+            <entry>
+              279 minutes (289 minutes with i18n)
+            </entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+
+    <table frame="all">
+      <title>Day 2</title>
+      <tgroup cols="2">
+        <colspec colname="c1" colnum="1" colwidth="1.0*"/>
+        <colspec colname="c2" colnum="2" colwidth="1.0*"/>
+        <thead>
+          <row>
+            <entry>
+              Activity
+            </entry>
+            <entry>
+              Time
+            </entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry>
+              Chapter 3
+            </entry>
+            <entry>
+              153 minutes
+            </entry>
+          </row>
+          <row>
+            <entry>
+              Chapter 4
+            </entry>
+            <entry>
+              145 minutes
+            </entry>
+          </row>
+          <row>
+            <entry>
+              Chapter 5
+            </entry>
+            <entry>
+              2 minutes
+            </entry>
+          </row>
+          <row>
+            <entry>
+              Total for day
+            </entry>
+            <entry>
+              300 minutes
+            </entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+
+    <table frame="all">
+      <title>Day 3</title>
+      <tgroup cols="2">
+        <colspec colname="c1" colnum="1" colwidth="1.0*"/>
+        <colspec colname="c2" colnum="2" colwidth="1.0*"/>
+        <thead>
+          <row>
+            <entry>
+              Activity
+            </entry>
+            <entry>
+              Time
+            </entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry>
+              Chapter 5
+            </entry>
+            <entry>
+              183 minutes
+            </entry>
+          </row>
+          <row>
+            <entry>
+              Chapter 6
+            </entry>
+            <entry>
+              107 minutes
+            </entry>
+          </row>
+          <row>
+            <entry>
+              Total for day
+            </entry>
+            <entry>
+              290 minutes
+            </entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+
+    <table frame="all">
+      <title>Day 4</title>
+      <tgroup cols="2">
+        <colspec colname="c1" colnum="1" colwidth="1.0*"/>
+        <colspec colname="c2" colnum="2" colwidth="1.0*"/>
+        <thead>
+          <row>
+            <entry>
+              Activity
+            </entry>
+            <entry>
+              Time
+            </entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry>
+              Chapter 6
+            </entry>
+            <entry>
+              38 minutes
+            </entry>
+          </row>
+          <row>
+            <entry>
+              Chapter 7
+            </entry>
+            <entry>
+              125 minutes
+            </entry>
+          </row>
+          <row>
+            <entry>
+              Chapter 8
+            </entry>
+            <entry>
+              135 minutes
+            </entry>
+          </row>
+          <row>
+            <entry>
+              Chapter 9
+            </entry>
+            <entry>
+              2 minutes
+            </entry>
+          </row>
+          <row>
+            <entry>
+              Total for day
+            </entry>
+            <entry>
+              300 minutes
+            </entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+
+    <table frame="all">
+      <title>Day 5</title>
+      <tgroup cols="2">
+        <colspec colname="c1" colnum="1" colwidth="1.0*"/>
+        <colspec colname="c2" colnum="2" colwidth="1.0*"/>
+        <thead>
+          <row>
+            <entry>
+              Activity
+            </entry>
+            <entry>
+              Time
+            </entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry>
+              Chapter 9
+            </entry>
+            <entry>
+              98 minutes
+            </entry>
+          </row>
+          <row>
+            <entry>
+              Chapter 10
+            </entry>
+            <entry>
+              85 minutes
+            </entry>
+          </row>
+          <row>
+            <entry>
+              Total for day
+            </entry>
+            <entry>
+              183 minutes
+            </entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+  </section>
+</preface>

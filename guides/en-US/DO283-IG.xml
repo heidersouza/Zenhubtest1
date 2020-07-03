@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % common_entities SYSTEM "common.ent" >
+%common_entities;
+]>
+<!-- Modify id, using course sku ("DO276", for example). -->
+<book role="solutions" id="DO283-IG">
+  <!-- role="solutions" == Easy Hack to get all solutions to show up -->
+  <!-- if ends with -IG to signify an INstructor Guide to the brand -->
+  <!-- DO NOT TOUCH -->
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Book_Info.xml"/>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Common/Conventions.xml"/>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="ig-chapters/course-schedule.xml"/>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="ig-chapters/course-intro.xml"/>
+  <!--   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="ig-chapters/chap-info.xml"/> -->
+  <!-- BEGIN COURSE CHAPTERS -->
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="ig-chapters/start-ig.xml"/>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="ig-chapters/implement-ig.xml"/>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="ig-chapters/deploy-ig.xml"/>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="ig-chapters/apps-ig.xml"/>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="ig-chapters/test-ig.xml"/>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="ig-chapters/tolerance-ig.xml"/>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="ig-chapters/gateway-ig.xml"/>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="ig-chapters/secure-ig.xml"/>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="ig-chapters/monitor-ig.xml"/>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="ig-chapters/comprehensive-ig.xml"/>
+  <!-- COMPREHENSIVE REVIEW EXAMPLE -->
+  <!-- Need to decide how this applies "generically", because Comp Reviews can vary a lot.
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="ig-chapters/comprehensive-review-ig.xml"/>
+    -->
+  <!-- END COURSE CHAPTERS -->
+</book>

@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % common_entities SYSTEM "common.ent" >
+%common_entities;
+]>
+<preface id="preface">
+  <title>Introduction</title>
+  <!-- This next section will need to be customized for most classes -->
+  <section id="course_intro">
+    <title>Red Hat Application Development II: Building Microservices with Quarkus</title>
+
+    <para>
+      Red Hat Application Development II: Building Microservices with Quarkus (DO283) is Building on Red Hat Application Development I: Programming in Java EE (JB183), the introductory course for Java EE application development, Red Hat Application Development II: Building Microservices with Quarkus (DO283) emphasizes learning architectural principles and implementing microservices based on Quarkus and OpenShift.This course is based on OpenShift 4.4 and Quarkus 1.3. You will build on Java EE application development fundamentals and focus on how to develop, monitor, test, and deploy modern microservices applications. Many enterprises are looking for a way to take advantage of cloud-native architectures, but many do not know the best approach. Quarkus is an exciting new technology that brings the reliability, familiarity, and maturity of Java Enterprise with a container-ready lightning fast deployment time.
+    </para>
+
+    <informaltable frame="none">
+      <tgroup cols="2">
+        <colspec colname="c1" colnum="1" colwidth="1.0*"/>
+        <colspec colname="c2" colnum="2" colwidth="2.2*"/>
+        <tbody>
+          <row>
+            <entry>
+              Course Objectives
+            </entry>
+            <entry>
+              <itemizedlist id="intro-objectives">
+                <listitem>
+                  <para>
+                    To come later.
+                  </para>
+                </listitem>
+                <listitem>
+                  <para>
+                    To come later.
+                  </para>
+                </listitem>
+              </itemizedlist>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              Audience
+            </entry>
+            <entry>
+              <itemizedlist id="intro-audience">
+                <listitem>
+                  <para>
+                    To come later.
+                  </para>
+                </listitem>
+              </itemizedlist>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              Prerequisites
+            </entry>
+            <entry>
+              <itemizedlist id="intro-prereqs">
+                <listitem>
+                  <para>
+                    To come later.
+                  </para>
+                </listitem>
+              </itemizedlist>
+            </entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </informaltable>
+  </section>
+  <!-- Update the contents of the Intro-Classroom.xml file to reflect your course -->
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Intro-Classroom.xml"/>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Common/Intro-i18n.xml"/>
+</preface>

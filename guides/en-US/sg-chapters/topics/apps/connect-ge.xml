@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % common_entities SYSTEM "../../../common.ent">
+%common_entities;
+]>
+<section id="apps-connect-ge">
+  <title>Implementing Service Discovery with OpenShift</title>
+
+  <task role="Checklist" id="apps-connect-ge-checklist">
+    <title>Cannot be empty, but is ignored</title>
+
+
+      <xi:include xmlns:xi="http://www.w3.org/2003/XInclude" href="connect-ge-content.xml" xpointer="xpointer(/section/task/*[not(self::title) and not(self::taskrelated)])">
+      <xi:fallback>
+        <procedure>
+          <step>
+            <note>
+              <para>
+                This section is still under development.
+              </para>
+            </note>
+          </step>
+        </procedure>
+      </xi:fallback>
+    </xi:include>
+
+      <!-- If the content file has a "taskrelated" element, it is included.
+        If a "taskrelated" element is not present, a default one is used. -->
+
+    <xi:include xmlns:xi="http://www.w3.org/2003/XInclude" href="connect-ge-content.xml" xpointer="xpointer(/section/task/taskrelated)">
+      <xi:fallback>
+        <taskrelated>
+          <formalpara>
+            <title>Finish</title>
+            <para>
+              On the <code>workstation</code> machine, use the <code>lab</code> command to complete this exercise.
+              This is important to ensure that resources from previous exercises do not impact upcoming exercises.
+            </para>
+          </formalpara>
+
+<screen><prompt>[student@workstation ~]$ </prompt><userinput>lab apps-connect finish</userinput></screen>
+        </taskrelated>
+      </xi:fallback>
+    </xi:include>
+  </task>
+
+  <para>
+    This concludes the guided exercise.
+  </para>
+</section>

@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % common_entities SYSTEM "../common.ent">
+%common_entities;
+]>
+<!-- Chapters should have an id that is a short version of the title. -->
+<chapter id="comprehensive">
+  <title>Comprehensive Review of Agile</title>
+  <abstract>
+    <para>
+      <informaltable frame="all">
+        <tgroup cols="2">
+          <colspec colname="c1" colnum="1" colwidth="1.0*"/>
+          <colspec colname="c2" colnum="2" colwidth="2.2*"/>
+          <tbody>
+            <row>
+              <entry>
+                <emphasis role="bold">Goal</emphasis>
+              </entry>
+              <entry>
+                Review tasks from <emphasis>
+                <xi:include
+                    xmlns:xi="http://www.w3.org/2001/XInclude"
+                    href="../Book_Info.xml"
+                    xpointer="xpointer(//bookinfo/title/node())"
+                  />
+                </emphasis>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <emphasis role="bold">Objectives</emphasis>
+              </entry>
+              <entry>
+                <itemizedlist>
+                  <listitem>
+                    <para>
+                      Review tasks from <emphasis>
+                      <xi:include
+                          xmlns:xi="http://www.w3.org/2001/XInclude"
+                          href="../Book_Info.xml"
+                          xpointer="xpointer(//bookinfo/title/node())"
+                        />
+                      </emphasis>
+                    </para>
+                  </listitem>
+                </itemizedlist>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <emphasis role="bold">Sections</emphasis>
+              </entry>
+              <entry>
+                <!-- Enter lecture section titles here. Do not list practice titles. Should be a 1-1 match with performance objectives. -->
+                <!-- If only one section, remove the <itemizedlist> -->
+                <itemizedlist>
+                  <listitem>
+                    <para>
+                      Reviewing Microservice Development Concepts (and Lab)
+                    </para>
+                  </listitem>
+                </itemizedlist>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <emphasis role="bold">Lab</emphasis>
+              </entry>
+              <!-- Enter Lab Title -->
+              <!-- If there is no Lab, remove this row completely. -->
+              <entry>
+                <para>
+                  Developing a Secure Microservice Endpoint
+                </para>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </informaltable>
+    </para>
+  </abstract>
+  <!-- Include section content from the topics directory. -->
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="topics/comprehensive/review-compreview.xml"/>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="topics/comprehensive/review-lab.xml"/>
+</chapter>

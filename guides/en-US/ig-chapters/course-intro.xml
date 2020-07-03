@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE preface PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % common_entities SYSTEM "../common.ent">
+%common_entities;
+]>
+<preface>
+  <title>Course Introduction</title>
+  <para>
+    Welcome students and provide an orientation to the class, classroom hardware, and facility or VT environment.
+  </para>
+  <section>
+    <title>Student Benefits</title>
+
+    <para>
+      Write something useful here.
+    </para>
+
+    <itemizedlist>
+      <listitem>
+        <para>
+          Benefit one.
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          Benefit two.
+        </para>
+      </listitem>
+    </itemizedlist>
+  </section>
+  <section>
+    <title>Presentation Notes</title>
+
+    <para>
+      Introduce yourself and welcome students to the class.
+      Before starting make sure any operational requirements, including taking attendance and providing students with materials, have been met.
+      For an in-person training event, orient students to the facility.
+      Make sure students know the classroom hours and plans for any rest breaks and lunch.
+    </para>
+
+    <para>
+      Discuss the basic structure of the course and course timing with the students.
+    </para>
+
+    <section>
+      <title>Objectives</title>
+
+      <para>
+        Introduce your students to the main objectives of this course.
+      </para>
+    </section>
+
+    <section>
+      <title>Audience and Prerequisites</title>
+
+      <para>
+        Discuss the intended audience and prerequisites for this course.
+      </para>
+    </section>
+  </section>
+</preface>

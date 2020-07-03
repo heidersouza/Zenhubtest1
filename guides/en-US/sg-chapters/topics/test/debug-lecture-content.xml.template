@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % common_entities SYSTEM "../../../common.ent">
+%common_entities;
+]>
+
+<section>
+  <title>can not be blank, is not included.  Actual title comes from the DCO</title>
+
+  <section>
+    <title>Sample Included Header 2</title>
+    <para>
+      Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+      One day a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.
+    </para>
+
+    <section>
+      <title>Sample Included Header 3</title>
+      <para>
+        The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text did not listen.
+        She packed her seven versalia, put her initial into the belt and made herself on the way.
+        She has not been seen since.
+      </para>
+    </section>
+  </section>
+
+  <section>
+    <title>Another included section</title>
+    <para>
+      This is a demonstration of including the content.
+    </para>
+  </section>
+
+  <section>
+    <title>&nbsp;</title>
+    <!-- Title is required for a section. -->
+    <!-- Template for a reference that does not link to Red Hat Documentation. -->
+    <note role="References">
+      <para>
+        <ulink url="http://docs.fedoraproject.org/en-US/Fedora_Contributor_Documentation/1/html/Users_Guide/">Publican Users Guide</ulink>
+      </para>
+    </note>
+    <!-- Template for a reference that does link to Red Hat Documentation. -->
+    <note role="References">
+      <para>
+        For more information, refer to the <citetitle>Automated Installation</citetitle> chapter in the <citetitle>Red&nbsp;Hat Enterprise&nbsp;Linux&nbsp;7 Installation Guide</citetitle> at <ulink url="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html-single/installation_guide/index#sect-automated-installation"/>
+      </para>
+    </note>
+  </section>
+
+</section>

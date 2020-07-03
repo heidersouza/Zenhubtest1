@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % common_entities SYSTEM "../../../common.ent">
+%common_entities;
+]>
+
+<!-- Content from this file is included in the actual lab file.
+     YOU DO NOT NEED to have section IDs or section titles.
+
+     These are set from the DCO/blueprint.
+-->
+<section>
+  <title>Can not be blank</title>
+  <!-- Tasks should have an id that is a short version of the topic. -->
+  <task role="Lab">
+    <title>Cannot be empty, but is ignored</title>
+
+    <tasksummary>
+      <formalpara>
+        <title>Performance Checklist</title>
+        <para>
+          In this lab, you will...
+        </para>
+      </formalpara>
+
+
+      <formalpara>
+        <title>Outcomes</title>
+        <!--Outcomes tell students what they will be able to do after completing a guided lab, lab, or an instructor-led lab.-->
+          <para>
+            You should be able to <replaceable>list of outcomes</replaceable>.
+          </para>
+      </formalpara>
+    </tasksummary>
+
+    <taskprerequisites>
+      <!-- if this lab depends on something done on previous guided exercise, state it explicity. If not, you can remove the para. -->
+      <para>
+        Sample prerequisites.
+      </para>
+      <!-- if your course never changes to a different local user, you can remove "As the <code>student</code> user" -->
+      <para>
+        As the <code>student</code> user on the <code>workstation</code> machine, use the <code>lab</code> command to prepare your system for this lab.
+      </para>
+      <!-- A short description of the environment created by lab xxx start is optional. -->
+      <para>
+        This command ensures that ...
+      </para>
+<screen><prompt>[student@workstation ~]$ </prompt><userinput>lab tolerance-review start</userinput></screen>
+    </taskprerequisites>
+
+    <procedure>
+
+      <step>
+        <para>
+          Sample instructions.
+          Include solutions as part of regular content.
+          We are holding hands here.
+        </para>
+
+        <substeps>
+          <step>
+            <para>
+              Substep one
+            </para>
+          </step>
+
+          <step>
+            <para>
+              Substep two
+            </para>
+          </step>
+        </substeps>
+      </step>
+
+      <step>
+        <para>
+          More sample instructions.
+        </para>
+
+        <substeps>
+          <step>
+            <para>
+              You do not have to use these substeps.
+            </para>
+          </step>
+
+          <step>
+            <para>
+              Limit substeps to six or fewer.
+            </para>
+          </step>
+        </substeps>
+      </step>
+    </procedure>
+    <!-- You do not need to write a "Finish" section, one is included in the template.
+         If you want to override that for some reason, add a "taskrelated" element
+         immediately after the preceding procedure element.
+    -->
+  </task>
+  <!-- The para tag that follows the task tag is not needed here -
+       the template provides it.
+  <para>
+    This concludes the guided exercise.
+  </para>
+  -->
+</section>

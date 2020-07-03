@@ -9,7 +9,7 @@ repos:
         always_run: yes
 
   - repo: git@github.com:RedHatTraining/guide-templater.git
-    rev: v1.2.2
+    rev: v1.5.0
     hooks:
       - id: render-templates
         always_run: yes

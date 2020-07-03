@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE preface PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % common_entities SYSTEM "../common.ent" >
+%common_entities;
+]>
+<preface role="conventions">
+  <title>Document Conventions</title>
+  <note role="References">
+    <para>
+      &quot;References&quot; describe where to find external documentation relevant to a subject.
+    </para>
+  </note>
+  <note>
+    <para>
+      &quot;Notes&quot; are tips, shortcuts or alternative approaches to the task at hand.
+      Ignoring a note should have no negative consequences, but you might miss out on a trick that makes your life easier.
+    </para>
+  </note>
+  <important>
+    <para>
+      &quot;Important&quot; boxes detail things that are easily missed: configuration changes that only apply to the current session, or services that need restarting before an update will apply.
+      Ignoring a box labeled &quot;Important&quot; will not cause data loss, but may cause irritation and frustration.
+    </para>
+  </important>
+  <warning>
+    <para>
+      &quot;Warnings&quot; should not be ignored.
+      Ignoring warnings will most likely cause data loss.
+    </para>
+  </warning>
+</preface>

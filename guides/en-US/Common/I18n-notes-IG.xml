@@ -1,0 +1,211 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section>
+  <title>Internationalization</title>
+
+  <note>
+    <para>
+      Some regions run Red&nbsp;Hat training in classrooms which by policy should be localized for the language in which the course is being taught.
+      The classroom setup process deploys all machines and users localized for <code>en-US.utf8</code> (US English).
+    </para>
+    <para>
+      If your classroom needs to be set to a different locale, this section must be covered.
+      The instructor should guide students through appropriate language and input configuration for their locale and hardware.
+      The instructor should then have students save the settings to their baseline machine images with <code>rht-vmctl</code>.
+    </para>
+    <para>
+      Per the directions in <code>ClassroomSetup.txt</code>, the locale settings for the physical layer (<code>foundation<replaceable>X</replaceable></code>) are inherited from the manual selections made when <code>foundation0</code> was installed.
+      Modifying the locale in the pre-built virtual machine images should be done as an exercise with the students updating and saving each of their virtual machines using <code>rht-vmctl save VMNAME</code> as described in the final step of the <quote>DETAILED INSTRUCTIONS</quote> in <code>ClassroomSetup.txt</code>.
+    </para>
+    <para>
+      For other locations, this section is optional.
+    </para>
+  </note>
+
+  <task role="Lecture">
+    <title>Language Support</title>
+
+    <procedure>
+      <step>
+        <para>
+          Explain to your students that Red&nbsp;Hat Enterprise&nbsp;Linux officially supports a large number of languages.
+          The book references the list at the time of writing.
+        </para>
+      </step>
+
+      <step>
+        <para>
+          <emphasis>Official support</emphasis> means that there is a certain level of support for the language in the operating system, customers can recieve support for technical issues with those languages, and can ask for correction of internationalization/localization (i18n/l10n) issues if there are problems.
+          It does not imply that communication with technical support representatives will be available in their native language.
+        </para>
+      </step>
+
+      <step>
+        <para>
+          It may be possible to use unsupported languages on the system, but customers might not recieve support for technical issues with those languages.
+        </para>
+      </step>
+    </procedure>
+  </task>
+
+  <section>
+    <title>Per-user Language Selection</title>
+
+    <para>
+      This subsection discusses GNOME 3 language settings for an individual user.
+      It is divided into two chunks: how to set the language/locale correctly, and how to set the input method for the locale correctly.
+    </para>
+
+    <para>
+      If your classroom machines need to have a locale and input method other than the defaults set, use this subsection as a workshop.
+      Have the students follow along with you in order to set up their machines.
+      At the end of the section, they will need to save their settings to their baseline machine images so that the localization persists across server resets.
+    </para>
+
+    <task role="Lecture">
+      <title>Language Settings</title>
+
+      <procedure>
+        <step>
+          <para>
+            Mention that GNOME 3 may prompt a user for their preferred language on first login (through <code>/usr/libexec/gnome-initial-setup</code>).
+            This may be disabled by the classroom setup process, but if it is available that is one way to set preferred locale.
+          </para>
+        </step>
+
+        <step>
+          <para>
+            Demonstrate <code>gnome-control-center region</code>.
+            For System Administration I, one way would be to use the GNOME GUI to select <menuchoice>
+            <guimenu>(Username)</guimenu>
+            <guimenuitem>Settings</guimenuitem>
+            </menuchoice> and open the <application>Region &amp; Language</application> application.
+          </para>
+        </step>
+
+        <step>
+          <para>
+            Mention that these settings will only affect GNOME 3 sessions, not <code>ssh</code> logins or logins on a text console.
+            Optionally mention the Note box with the shell snippet on how to tie together the GNOME locale for ssh and console logins in RHEL 7.
+            The RHEL 6 file used by GNOME was not in <code>/var/lib</code>, but was <code>${HOME}/.dmrc</code>.
+          </para>
+
+          <important>
+            <para>
+              The kernel's physical console/virtual consoles (<code>$TERM="linux"</code>) barely support Western European fonts, and do not support non-Latin text well at all.
+              Locales this definitely impacts: <code>ja-JP</code>, <code>ko-KR</code>, <code>zh-CN</code>, and <code>zh-TW</code>.
+            </para>
+            <para>
+              For affected languages, the sample code either should not be used, or should check to see if $TERM="linux" and $LANG is one of the affected languages, and if so sets it to <code>en_US.UTF-8</code>.
+              A good example of how to do this is in <code>/etc/profile.d/lang.sh</code>.
+            </para>
+          </important>
+        </step>
+
+        <step>
+          <para>
+            Explain the format of the <code>LANG</code> variable: <replaceable>language</replaceable>_<replaceable>REGION</replaceable>.<replaceable>ENCODING</replaceable>.
+          </para>
+        </step>
+
+        <step>
+          <para>
+            Explain that single commands can be run in a different language by setting the <code>LANG</code> variable just for that command.
+          </para>
+
+          <para>
+            Demo the following command:
+          </para>
+
+<screen><code>LANG=ja_JP.UTF-8 ls nosuchfile</code></screen>
+
+          <para>
+            If Japanese fonts are not yet installed a dialog will pop-up to ask if you want to install them.
+            Click on <guibutton>Install</guibutton> and enter the <code>root</code> password when prompted.
+          </para>
+        </step>
+      </procedure>
+    </task>
+
+    <task role="Lecture">
+      <title>Input Method Settings</title>
+
+      <procedure>
+        <step>
+          <para>
+            Demonstrate how to add additional input methods to the system with the <application>Region &amp; Language</application> application.
+            Either add the input method appropriate to your locale, or add the <guilabel>English (international AltGr dead keys)</guilabel> method as an example.
+          </para>
+        </step>
+
+        <step>
+          <para>
+            Explain to your students that to switch between input methods they can use <keycombo><keycap>Super</keycap><keycap>Space</keycap></keycombo> (also known as <keycombo><keycap>Windows</keycap><keycap>Space</keycap></keycombo>).
+          </para>
+        </step>
+
+        <step>
+          <para>
+            If your chosen input method has special features (such as the <guilabel>Japanese (Kana Kanji)</guilabel> method), demonstrate them here.
+          </para>
+        </step>
+      </procedure>
+    </task>
+
+    <task role="Lecture">
+      <title>System-wide Default Language Settings</title>
+
+      <procedure>
+        <step>
+          <para>
+            Discuss (and optionally demonstrate) how <code>localectl set-locale</code> can be used to set the system-wide default language.
+            Mention how settings are saved in <code>/etc/locale.conf</code>.
+          </para>
+        </step>
+
+        <step>
+          <para>
+            We do not discuss setting console keyboard settings here in depth, but if you need to do so, cover <code>localectl</code> and <code>/etc/vconsole.conf</code>.
+          </para>
+        </step>
+
+        <step>
+          <para>
+            Optionally, you may mention that <code>/etc/profile.d/lang.sh</code> will cause the system console to use <code>en_US.UTF-8</code> instead of the configured system-wide locale for languages which are not well supported by the locale.
+            (If the student sets <code>$LANG</code> manually after that startup script runs, that will not happen.)
+          </para>
+        </step>
+      </procedure>
+    </task>
+
+    <task role="Lecture">
+      <title>Language Packs</title>
+
+      <procedure>
+        <step>
+          <para>
+            Explain that language packs install helper packages that include translated man pages, help pages, spelling dictionaries, and other supporting files.
+          </para>
+        </step>
+
+        <step>
+          <para>
+            <code>yum langavailable</code> shows available packs
+          </para>
+        </step>
+
+        <step>
+          <para>
+            <code>yum langlist</code> shows installed packs
+          </para>
+        </step>
+
+        <step>
+          <para>
+            <code>yum langinstall <replaceable>code</replaceable></code> installs a language pack
+          </para>
+        </step>
+      </procedure>
+    </task>
+  </section>
+</section>

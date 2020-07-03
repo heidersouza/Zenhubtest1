@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % common_entities SYSTEM "../../../common.ent">
+%common_entities;
+]>
+
+<section id="deploy-summary">
+
+  <title>Summary</title>
+  <!-- Write a summary statement at the end of every chapter that summarizes the main ideas and key points of the chapter.
+  A summary lists the absolutely critical things the student must know in order to successfully meet the chapter objective.
+  After building your chapter, look back at each section and identify one or two things per section that are critical for the student to know and retain about the section.
+  A summary statement should not restate the section objectives.
+  -->
+  <para>
+    In this chapter, you learned:
+  </para>
+  <itemizedlist>
+    <listitem>
+      <para>
+        Sample item one.
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        Sample item two.
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        Sample item three.
+      </para>
+    </listitem>
+  </itemizedlist>
+</section>
+
+<!-- In a few cases, you may have enough items to list them by section, in which case you should include the section title in bold above the bullet list for that section. -->
+<!--
+<section>
+  <title>Summary</title>
+  <formalpara>
+    <title><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="filename.xml" xpointer="xpointer(//section[1]/title/node())"/></title>
+    <para>
+      In this section, you learned:
+    </para>
+  </formalpara>
+  <itemizedlist>
+    <listitem>
+      <para>
+        Sample item one.
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        Sample item two.
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        Sample item three.
+      </para>
+    </listitem>
+  </itemizedlist>
+</section>
+-->

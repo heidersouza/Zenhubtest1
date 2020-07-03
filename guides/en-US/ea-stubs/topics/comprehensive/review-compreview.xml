@@ -1,0 +1,145 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % common_entities SYSTEM "../../../common.ent">
+%common_entities;
+]>
+<section id="comprehensive-review-compreview">
+  <title>Comprehensive Review</title>
+
+  <section>
+    <title>Objectives</title>
+
+    <para>
+      After completing this section, you should be able to demonstrate knowledge and skills learned in <emphasis>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../../../Book_Info.xml" xpointer="xpointer(//bookinfo/title//node())"/>
+      </emphasis>.
+    </para>
+  </section>
+
+  <section>
+    <title>Reviewing
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../../../Book_Info.xml" xpointer="xpointer(//bookinfo/title//node())"/></title>
+
+    <para>
+      Before beginning the comprehensive review for this course, you should be comfortable with the topics covered in each chapter.
+    </para>
+
+    <para condition="ilt">
+      Do not hesitate to ask the instructor for extra guidance or clarification on these topics.
+    </para>
+
+    <para condition="role">
+      You can refer to earlier sections in the textbook for extra study.
+    </para>
+
+    <!-- Chapter 1 -->
+
+    <section>
+      <title><xref linkend="start"/></title>
+
+      <para>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../../start.xml" xpointer="xpointer(//chapter/abstract//informaltable//tbody/row[1]/entry[2]/node())"/>
+      </para>
+
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../../start.xml" xpointer="xpointer(//chapter/abstract//informaltable//tbody/row[2]/entry[2]//itemizedlist)"/>
+    </section>
+
+    <!-- Chapter 2 -->
+
+    <section>
+      <title><xref linkend="implement"/></title>
+
+      <para>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../../implement.xml" xpointer="xpointer(//chapter/abstract//informaltable//tbody/row[1]/entry[2]/node())"/>
+      </para>
+
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../../implement.xml" xpointer="xpointer(//chapter/abstract//informaltable//tbody/row[2]/entry[2]//itemizedlist)"/>
+    </section>
+
+    <!-- Chapter 3 -->
+
+    <section>
+      <title><xref linkend="deploy"/></title>
+
+      <para>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../../deploy.xml" xpointer="xpointer(//chapter/abstract//informaltable//tbody/row[1]/entry[2]/node())"/>
+      </para>
+
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../../deploy.xml" xpointer="xpointer(//chapter/abstract//informaltable//tbody/row[2]/entry[2]//itemizedlist)"/>
+    </section>
+
+    <!-- Chapter 4 -->
+
+    <section>
+      <title><xref linkend="apps"/></title>
+
+      <para>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../../apps.xml" xpointer="xpointer(//chapter/abstract//informaltable//tbody/row[1]/entry[2]/node())"/>
+      </para>
+
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../../apps.xml" xpointer="xpointer(//chapter/abstract//informaltable//tbody/row[2]/entry[2]//itemizedlist)"/>
+    </section>
+
+    <!-- Chapter 5 -->
+
+    <section>
+      <title><xref linkend="test"/></title>
+
+      <para>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../../test.xml" xpointer="xpointer(//chapter/abstract//informaltable//tbody/row[1]/entry[2]/node())"/>
+      </para>
+
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../../test.xml" xpointer="xpointer(//chapter/abstract//informaltable//tbody/row[2]/entry[2]//itemizedlist)"/>
+    </section>
+
+    <!-- Chapter 6 -->
+
+    <section>
+      <title><xref linkend="tolerance"/></title>
+
+      <para>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../../tolerance.xml" xpointer="xpointer(//chapter/abstract//informaltable//tbody/row[1]/entry[2]/node())"/>
+      </para>
+
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../../tolerance.xml" xpointer="xpointer(//chapter/abstract//informaltable//tbody/row[2]/entry[2]//itemizedlist)"/>
+    </section>
+
+    <!-- Chapter 7 -->
+
+    <section>
+      <title><xref linkend="gateway"/></title>
+
+      <para>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../../gateway.xml" xpointer="xpointer(//chapter/abstract//informaltable//tbody/row[1]/entry[2]/node())"/>
+      </para>
+
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../../gateway.xml" xpointer="xpointer(//chapter/abstract//informaltable//tbody/row[2]/entry[2]//itemizedlist)"/>
+    </section>
+
+    <!-- Chapter 8 -->
+
+    <section>
+      <title><xref linkend="secure"/></title>
+
+      <para>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../../secure.xml" xpointer="xpointer(//chapter/abstract//informaltable//tbody/row[1]/entry[2]/node())"/>
+      </para>
+
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../../secure.xml" xpointer="xpointer(//chapter/abstract//informaltable//tbody/row[2]/entry[2]//itemizedlist)"/>
+    </section>
+
+    <!-- Chapter 9 -->
+
+    <section>
+      <title><xref linkend="monitor"/></title>
+
+      <para>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../../monitor.xml" xpointer="xpointer(//chapter/abstract//informaltable//tbody/row[1]/entry[2]/node())"/>
+      </para>
+
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../../monitor.xml" xpointer="xpointer(//chapter/abstract//informaltable//tbody/row[2]/entry[2]//itemizedlist)"/>
+    </section>
+
+    <!-- Add additional hints or info here?? Any standard for what to include here? -->
+  </section>
+</section>

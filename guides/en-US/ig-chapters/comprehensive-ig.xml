@@ -1,0 +1,136 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % common_entities SYSTEM "../common.ent">
+%common_entities;
+]>
+<chapter id="comprehensive-ig">
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../sg-chapters/comprehensive.xml" xpointer="xpointer(/chapter/title)"/>
+  <section role="UnitInfo">
+    <title>Chapter Information</title>
+
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="comprehensive-tips.xml" xpointer="xpointer(/section/section[1]/*[not(self::title)])">
+      <xi:fallback>
+        <para>
+          Unable to pull /section/section[1] content from file: ig-chapters/comprehensive-tips.xml
+        </para>
+      </xi:fallback>
+    </xi:include>
+  </section>
+  <section>
+    <title>Chapter Schedule</title>
+
+    <table frame="all">
+      <title>ILT/VT Schedule</title>
+      <tgroup cols="4">
+        <colspec colname="c1" colnum="1" colwidth="1.0*"/>
+        <colspec colname="c2" colnum="2" colwidth="3.0*"/>
+        <colspec colname="c3" colnum="3" colwidth="2.0*"/>
+        <colspec colname="c4" colnum="4" colwidth="1.0*"/>
+        <thead>
+          <row>
+            <entry>
+              Section
+            </entry>
+            <entry>
+              Title
+            </entry>
+            <entry>
+              Presentation &amp; Engagement Methods
+            </entry>
+            <entry>
+              Time (minutes)
+            </entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry namest="c1" nameend="c3">
+              Introduction
+            </entry>
+            <entry>
+              2
+            </entry>
+          </row>
+          <row>
+            <entry morerows="1">
+              1
+            </entry>
+            <entry morerows="1">
+              <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../sg-chapters/topics/comprehensive/review-compreview.xml" xpointer="xpointer(/section/title/node())"/>
+            </entry>
+            <entry>
+              P: Lecture
+            </entry>
+            <entry>
+              5
+            </entry>
+          </row>
+          <row>
+            <entry>
+              Review Lab
+            </entry>
+            <entry>
+              75
+            </entry>
+          </row>
+          <row>
+            <entry namest="c1" nameend="c3">
+              Conclusion
+            </entry>
+            <entry>
+              3
+            </entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+
+    <para>
+      Total Time: 85 minutes
+    </para>
+  </section>
+  <!-- Change in practice about discussing exact timings in minutes.
+    We no longer want to refer to how many minutes something takes
+    anywhere outside the table at the top of the chapter and the
+    chapter timings at the start of the course.  This goes both
+    for body text and for title text below.  This is because we've
+    found too many instances where the timings below don't match
+    up with the table above.  (A 3 minute intro for a 5 minute
+    presentation; a 15 minute wrap up that in the table is for 2.)
+    This also should reduce the amount of time it takes to update
+    timings post-pilot....  -->
+  <section>
+    <title>Chapter Objectives</title>
+
+    <para>
+      By the end of this chapter, students should be able to:
+    </para>
+
+    <itemizedlist>
+      <listitem>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../sg-chapters/comprehensive.xml" xpointer="xpointer(/chapter/abstract//informaltable//tbody/row[2]/entry[2]//para)"/>
+      </listitem>
+    </itemizedlist>
+  </section>
+  <section>
+    <title>Key Takeaways</title>
+
+    <para>
+      Key takeaways from this chapter include the following:
+    </para>
+
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../sg-chapters/topics/comprehensive/summary.xml" xpointer="xpointer(/section/itemizedlist)">
+      <xi:fallback>
+        <para>
+          Summary bullets are still under development.
+        </para>
+      </xi:fallback>
+    </xi:include>
+  </section>
+  <!-- Include tips content separately.  -->
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../ig-chapters/comprehensive-tips.xml" xpointer="xpointer(/section/section[2])">
+    <xi:fallback>
+      <!-- No Tips file found - assume that there are no tips. -->
+    </xi:fallback>
+  </xi:include>
+</chapter>

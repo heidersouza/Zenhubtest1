@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % common_entities SYSTEM "../../../common.ent">
+%common_entities;
+]>
+<section id="start-architecture-multchoice">
+
+  <title>Describing Agile Architecture Patterns</title>
+
+  <task role="MultChoice" id="start-architecture-multchoice-task">
+    <xi:include xmlns:xi="http://www.w3.org/2003/XInclude" href="architecture-mc-content.xml" xpointer="xpointer(/section/task/*)">
+      <xi:fallback>
+        <title>Describing Agile Architecture Patterns</title>
+        <procedure>
+          <step>
+            <para>
+              Quiz questions are not yet available.
+            </para>
+          </step>
+        </procedure>
+      </xi:fallback>
+    </xi:include>
+  </task>
+</section>

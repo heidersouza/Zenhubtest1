@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % common_entities SYSTEM "../../../common.ent">
+%common_entities;
+]>
+<section id="monitor-metrics-lecture">
+  <title>Adding Metrics to a Microservice</title>
+
+  <section>
+    <title>Objectives</title>
+
+    <para>
+      After completing this section, you should be able to use the Metric specification to add metrics to a microservice.
+    </para>
+  </section>
+
+  <!-- When this section is ready for EA, create a symlink for the metrics-lecture-content.xml file
+    to the ../../../sg-chapters/topics/monitor/metrics-lecture-content.xml file.
+    EX:
+    $> ln -s ../../../sg-chapters/topics/monitor/metrics-lecture-content.xml metrics-lecture-content.xml -->
+
+  <xi:include xmlns:xi="http://www.w3.org/2003/XInclude" href="metrics-lecture-content.xml" xpointer="xpointer(/section/*[not(self::title)] )">
+    <xi:fallback>
+      <section>
+        <title>Under Development</title>
+
+        <para>
+          This section is still under development.
+        </para>
+      </section>
+    </xi:fallback>
+  </xi:include>
+
+  <!-- References are **NOT** generated from entries in the DCO yet.
+    You should include references in the metrics-lecture-content.xml file. -->
+</section>

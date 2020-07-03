@@ -1,0 +1,340 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % common_entities SYSTEM "../common.ent" >
+%common_entities;
+]>
+<!-- STANDARD INSTRUCTIONS FOR CONTROLLING ILT AND RAVELLO -->
+<!-- INSTRUCTIONS:
+- During development, the current version of this file should be copied from the git@github.com:RedHatTraining/skeleton.git repo.
+- Normally, content developers should not need to directly edit this file, since it's common to all courses.
+Changes should be submitted as a pull request to the copy in skeleton.
+- Some unusual courses may need to have content here that diverges from the standard instructions.
+These should be discussed with the architect and content services to ensure that this is needed for that course. -->
+<section>
+  <title>Controlling Your Systems</title>
+
+  <!-- ILT INSTRUCTIONS BEGIN HERE -->
+
+  <para condition="ilt">
+    In an instructor-led training classroom, students are assigned a physical computer (<code>foundation<replaceable>X</replaceable>.ilt.example.com</code>), which is used to access their virtual machines running on that host.
+    Students are automatically logged in to the physical machine as the <code>kiosk</code> user, with the password <code>redhat</code>.
+    The classroom systems with which you work are virtual machines running on that host.
+  </para>
+
+  <para condition="ilt">
+    On <code>foundation<replaceable>X</replaceable></code>, a special command called <code>rht-vmctl</code> is used to work with the virtual machines.
+    The commands in the following table should be run as the <code>kiosk</code> user on <code>foundation<replaceable>X</replaceable></code>, and can be used with any of the virtual machines.
+  </para>
+
+  <table frame="all" condition="ilt">
+    <title><code>rht-vmctl</code> Commands</title>
+    <tgroup cols="2">
+      <colspec colname="c1" colnum="1" colwidth="1.0*"/>
+      <colspec colname="c2" colnum="2" colwidth="1.0*"/>
+      <thead>
+        <row>
+          <entry>
+            Action
+          </entry>
+          <entry>
+            Command
+          </entry>
+        </row>
+      </thead>
+      <tbody>
+        <row>
+          <entry>
+            Start <code>server</code> machine
+          </entry>
+          <entry>
+            <code>rht-vmctl start server</code>
+          </entry>
+        </row>
+        <row>
+          <entry>
+            View &quot;physical console&quot; to log in and work with the <code>server</code> machine
+          </entry>
+          <entry>
+            <code>rht-vmctl view server</code>
+          </entry>
+        </row>
+        <row>
+          <entry>
+            Reset <code>server</code> machine to its previous state and restart the virtual machine
+          </entry>
+          <entry>
+            <code>rht-vmctl reset server</code>
+          </entry>
+        </row>
+      </tbody>
+    </tgroup>
+  </table>
+
+  <para condition="ilt">
+    At the start of a lab exercise, if the instruction "reset your servera" appears, you should run the <code>rht-vmctl reset servera</code> command on the <code>foundation<replaceable>X</replaceable></code> system as the <code>kiosk</code> user.
+    Likewise, if the instruction "reset your workstation" appears, you should run the <code>rht-vmctl reset workstation</code> command on <code>foundation<replaceable>X</replaceable></code> as the <code>kiosk</code> user.
+  </para>
+
+  <!-- END OF ILT INSTRUCTIONS -->
+
+  <!-- RAVELLO (VT/ROLE/RHLS) INSTRUCTIONS BEGIN HERE -->
+
+  <!-- Avoid referring to VT/ROLE/RHLS environments by name.
+    All text here will appear in the materials used for VT and ROLE/RHLS! -->
+
+  <!-- I'm not convinced the statement below is true for VT. -->
+
+  <para condition="role">
+    Students are assigned remote computers in a Red&nbsp;Hat Online Learning classroom.
+    They are accessed through a web application hosted at <ulink url="http://rol.redhat.com">rol.redhat.com</ulink>.
+    Students should log in to this site using their Red&nbsp;Hat Customer Portal user credentials.
+  </para>
+
+  <formalpara condition="role">
+    <title>Controlling the Virtual Machines</title>
+    <para>
+      The virtual machines in your classroom environment are controlled through a web page.
+      The state of each virtual machine in the classroom is displayed on the page under the <guilabel>Online Lab</guilabel> tab.
+    </para>
+  </formalpara>
+
+  <!-- Possible illustration here.
+    I'm actually fine with this not matching the course, but we may want a simpler example. -->
+
+  <!--
+    <mediaobject id="CL220-ROL-Online-Lab-page" condition="role">
+    <imageobject>
+    <imagedata fileref="../images/cl220-rol-online-lab.png" scalefit="1" width="100%" align="center"/>
+    </imageobject>
+    <caption>An example Online Lab management page</caption>
+    </mediaobject>
+    -->
+
+  <table frame="all" condition="role">
+    <title>Machine States</title>
+    <tgroup cols="2">
+      <colspec colname="c1" colnum="1" colwidth="1.0*"/>
+      <colspec colname="c2" colnum="2" colwidth="3.0*"/>
+      <thead>
+        <row>
+          <entry>
+            Virtual Machine State
+          </entry>
+          <entry>
+            Description
+          </entry>
+        </row>
+      </thead>
+      <tbody>
+        <row>
+          <entry>
+            STARTING
+          </entry>
+          <entry>
+            The virtual machine is in the process of booting.
+          </entry>
+        </row>
+        <row>
+          <entry>
+            STARTED
+          </entry>
+          <entry>
+            The virtual machine is running and available (or, when booting, soon will be).
+          </entry>
+        </row>
+        <row>
+          <entry>
+            STOPPING
+          </entry>
+          <entry>
+            The virtual machine is in the process of shutting down.
+          </entry>
+        </row>
+        <row>
+          <entry>
+            STOPPED
+          </entry>
+          <entry>
+            The virtual machine is completely shut down.
+            Upon starting, the virtual machine boots into the same state as when it was shut down (the disk will have been preserved).
+          </entry>
+        </row>
+        <row>
+          <entry>
+            PUBLISHING
+          </entry>
+          <entry>
+            The initial creation of the virtual machine is being performed.
+          </entry>
+        </row>
+        <row>
+          <entry>
+            WAITING_TO_START
+          </entry>
+          <entry>
+            The virtual machine is waiting for other virtual machines to start.
+          </entry>
+        </row>
+      </tbody>
+    </tgroup>
+  </table>
+
+  <para condition="role">
+    Depending on the state of a machine, a selection of the following actions is available.
+  </para>
+
+  <table frame="all" condition="role">
+    <title>Classroom/Machine Actions</title>
+    <tgroup cols="2">
+      <colspec colname="c1" colnum="1" colwidth="1.0*"/>
+      <colspec colname="c2" colnum="2" colwidth="3.0*"/>
+      <thead>
+        <row>
+          <entry>
+            Button or Action
+          </entry>
+          <entry>
+            Description
+          </entry>
+        </row>
+      </thead>
+      <tbody>
+        <row>
+          <entry>
+            <guibutton>PROVISION LAB</guibutton>
+          </entry>
+          <entry>
+            Create the ROL classroom.
+            Creates all of the virtual machines needed for the classroom and starts them.
+            Can take several minutes to complete.
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <guibutton>DELETE LAB</guibutton>
+          </entry>
+          <entry>
+            Delete the ROL classroom.
+            Destroys all virtual machines in the classroom.
+            <emphasis role="bold">Caution: Any work generated on the disks is lost.</emphasis>
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <guibutton>START LAB</guibutton>
+          </entry>
+          <entry>
+            Start all virtual machines in the classroom.
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <guibutton>SHUTDOWN LAB</guibutton>
+          </entry>
+          <entry>
+            Stop all virtual machines in the classroom.
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <guibutton>OPEN CONSOLE</guibutton>
+          </entry>
+          <entry>
+            Open a new tab in the browser and connect to the console of the virtual machine.
+            Students can log in directly to the virtual machine and run commands.
+            In most cases, students should log in to the <code>workstation</code> virtual machine and use <code>ssh</code> to connect to the other virtual machines.
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <menuchoice>
+            <guimenu>ACTION</guimenu>
+            <guimenuitem>Start</guimenuitem>
+            </menuchoice>
+          </entry>
+          <entry>
+            Start (power on) the virtual machine.
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <menuchoice>
+            <guimenu>ACTION</guimenu>
+            <guimenuitem>Shutdown</guimenuitem>
+            </menuchoice>
+          </entry>
+          <entry>
+            Gracefully shut down the virtual machine, preserving the contents of its disk.
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <menuchoice>
+            <guimenu>ACTION</guimenu>
+            <guimenuitem>Power Off</guimenuitem>
+            </menuchoice>
+          </entry>
+          <entry>
+            Forcefully shut down the virtual machine, preserving the contents of its disk.
+            This is equivalent to removing the power from a physical machine.
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <menuchoice>
+            <guimenu>ACTION</guimenu>
+            <guimenuitem>Reset</guimenuitem>
+            </menuchoice>
+          </entry>
+          <entry>
+            Forcefully shut down the virtual machine and reset the disk to its initial state.
+            <emphasis role="bold">Caution: Any work generated on the disk is lost.</emphasis>
+          </entry>
+        </row>
+      </tbody>
+    </tgroup>
+  </table>
+
+  <para condition="role">
+    At the start of an exercise, if instructed to reset a single virtual machine node, click <menuchoice>
+    <guimenu>ACTION</guimenu>
+    <guimenuitem>Reset</guimenuitem>
+    </menuchoice> for only the specific virtual machine.
+  </para>
+
+  <para condition="role">
+    At the start of an exercise, if instructed to reset all virtual machines, click <menuchoice>
+    <guimenu>ACTION</guimenu>
+    <guimenuitem>Reset</guimenuitem>
+    </menuchoice>
+  </para>
+
+  <para condition="role">
+    If you want to return the classroom environment to its original state at the start of the course, you can click <guibutton>DELETE LAB</guibutton> to remove the entire classroom environment.
+    After the lab has been deleted, you can click <guibutton>PROVISION LAB</guibutton> to provision a new set of classroom systems.
+  </para>
+
+  <warning condition="role">
+    <para>
+      The <guibutton>DELETE LAB</guibutton> operation cannot be undone.
+      Any work you have completed in the classroom environment up to that point will be lost.
+    </para>
+  </warning>
+
+  <formalpara condition="role">
+    <title>The Autostop Timer</title>
+    <para>
+      The Red&nbsp;Hat Online Learning enrollment entitles students to a certain amount of computer time.
+      To help conserve allotted computer time, the ROL classroom has an associated countdown timer, which shuts down the classroom environment when the timer expires.
+    </para>
+  </formalpara>
+
+  <para condition="role">
+    To adjust the timer, click <guibutton>MODIFY</guibutton> to display the <guilabel>New Autostop Time</guilabel> dialog box.
+    Set the number of hours and minutes until the classroom should automatically stop.
+    Note that there is a maximum time of ten hours.
+    Click <guibutton>ADJUST TIME</guibutton> to apply this change to the timer settings.
+  </para>
+
+  <!-- END OF RAVELLO INSTRUCTIONS -->
+</section>

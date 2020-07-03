@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % common_entities SYSTEM "../../../common.ent">
+%common_entities;
+]>
+<section role="Test" id="comprehensive-review-lab">
+  <title>Developing a Secure Microservice Endpoint</title>
+
+  <task role="Lab" id="comprehensive-review-lab-task">
+    <title>Cannot be empty, but is ignored</title>
+
+    <!-- When this section is ready for EA, create a symlink for the review-lab-content.xml file
+      to the ../../../sg-chapters/topics/comprehensive/review-lab-content.xml file.
+      EX:
+      $> ln -s ../../../sg-chapters/topics/comprehensive/review-lab-content.xml review-lab-content.xml -->
+
+    <xi:include xmlns:xi="http://www.w3.org/2003/XInclude" href="review-lab-content.xml" xpointer="xpointer(/section/task/*[not(self::title) and not(self::taskrelated)])">
+      <xi:fallback>
+        <procedure>
+          <step>
+            <note>
+              <para>
+                This section is still under development.
+              </para>
+            </note>
+          </step>
+        </procedure>
+      </xi:fallback>
+    </xi:include>
+
+
+    <xi:include xmlns:xi="http://www.w3.org/2003/XInclude" href="review-lab-content.xml" xpointer="xpointer(/section/task/taskrelated)])">
+      <xi:fallback>
+        <taskrelated>
+          <formalpara>
+            <title>Evaluation</title>
+            <para>
+              Grade your work by running the <code>lab comprehensive-review grade</code> command from your <code>workstation</code> machine.
+              Correct any reported failures and rerun the script until successful.
+            </para>
+          </formalpara>
+
+<screen><prompt>[student@workstation ~]$ </prompt><userinput>lab comprehensive-review grade</userinput></screen>
+
+          <formalpara>
+            <title>Finish</title>
+            <para>
+              On the <code>workstation</code> machine, use the <code>lab</code> command to complete this exercise.
+              This is important to ensure that resources from previous exercises do not impact upcoming exercises.
+            </para>
+          </formalpara>
+
+<screen><prompt>[student@workstation ~]$ </prompt><userinput>lab comprehensive-review finish</userinput></screen>
+        </taskrelated>
+      </xi:fallback>
+    </xi:include>
+  </task>
+
+  <para>
+    This concludes the lab.
+  </para>
+</section>

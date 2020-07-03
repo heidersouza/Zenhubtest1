@@ -18,10 +18,10 @@ function has() {
 }
 
 # Update hooks because the are "fast changing"
-pre-commit autoupdate -c .pre-commit-dco-config.yaml || ( echo "Unable to update DCO hooks." && exit 1 )
+pre-commit autoupdate -c .pre-commit-dco-config.yaml 
 
 # Convert "dco.ods" file to YAML files
-pre-commit run ods-to-yaml -c "$DCO_PCOMMIT_CONFIG" --all-files || ( echo "Unable to transform DCO to YAML files." && exit 2 )
+pre-commit run ods-to-yaml -c "$DCO_PCOMMIT_CONFIG" --all-files 
 
 # Execute the template renderer, for python2.7 (RHEL7, RHEL7 CSB)
 if [ -f /etc/os-release ]; then
@@ -56,5 +56,5 @@ fi
 
 # Last (optional) step: apply hooks to ensure generated files comply with DB
 # Those hooks update files, so we can't rely on the exitcode nor run them in one step.
-pre-commit run xmlformat_ruby -a
-pre-commit run pattern-replacer -a
+pre-commit run xmlformat -a 2>&1
+pre-commit run pattern-replacer -a 2>&1

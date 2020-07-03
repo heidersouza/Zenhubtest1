@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % common_entities SYSTEM "../common.ent" >
+%common_entities;
+]>
+<section>
+  <title>Internationalization</title>
+
+  <!-- Commenting out since we can't confirm the current list.
+    Need to identify where authoritative information on the supported languages is. -->
+
+  <!--
+    Red&nbsp;Hat Enterprise&nbsp;Linux officially supports 22 languages: English, Assamese, Bengali,
+    Chinese (Simplified), Chinese (Traditional), French, German, Gujarati, Hindi, Italian, Japanese,
+    Kannada, Korean, Malayalam, Marathi, Odia, Portuguese (Brazilian), Punjabi, Russian, Spanish,
+    Tamil, and Telugu.
+    -->
+
+  <section>
+    <title>Per-user Language Selection</title>
+
+    <para>
+      Your users might prefer to use a different language for their desktop environment than the system-wide default.
+      They might also want to use a different keyboard layout or input method for their account.
+    </para>
+
+    <formalpara>
+      <title>Language Settings</title>
+      <para>
+        In the GNOME desktop environment, the user might be prompted to set their preferred language and input method on first login.
+        If not, then the easiest way for an individual user to adjust their preferred language and input method settings is to use the <application>Region &amp; Language</application> application.
+      </para>
+    </formalpara>
+
+    <para>
+      You can start this application in two ways.
+      You can run the command <code>gnome-control-center region</code> from a terminal window, or on the top bar, from the system menu in the right corner, select the settings button (which has a crossed screwdriver and wrench for an icon) from the bottom left of the menu.
+    </para>
+
+    <para>
+      In the window that opens, select <application>Region &amp; Language</application>.
+      Click the <guilabel>Language</guilabel> box and select the preferred language from the list that appears.
+      This also updates the <guilabel>Formats</guilabel> setting to the default for that language.
+      The next time you log in, these changes will take full effect.
+    </para>
+
+    <para>
+      These settings affect the GNOME desktop environment and any applications such as <code>gnome-terminal</code> that are started inside it.
+      However, by default they do not apply to that account if accessed through an <code>ssh</code> login from a remote system or a text-based login on a virtual console (such as <code>tty5</code>).
+    </para>
+
+    <note>
+      <para>
+        You can make your shell environment use the same <code>LANG</code> setting as your graphical environment, even when you log in through a text-based virtual console or over <code>ssh</code>.
+        One way to do this is to place code similar to the following in your <code>~/.bashrc</code> file.
+        This example code will set the language used on a text login to match the one currently set for the user's GNOME desktop environment:
+      </para>
+<screen>i=$(grep &#x27;Language=&#x27; /var/lib/AccountsService/users/${USER} \
+  | sed &#x27;s/Language=//&#x27;)
+if [ &#x22;$i&#x22; != &#x22;&#x22; ]; then
+    export LANG=$i
+fi</screen>
+      <para>
+        Japanese, Korean, Chinese, and other languages with a non-Latin character set might not display properly on text-based virtual consoles.
+      </para>
+    </note>
+
+    <para>
+      Individual commands can be made to use another language by setting the <varname>LANG</varname> variable on the command line:
+    </para>
+
+<screen><prompt>[user@host ~]$ </prompt><userinput>LANG=fr_FR.utf8 date</userinput>
+<code>jeu. avril 25 17:55:01 CET 2019</code></screen>
+
+    <para>
+      Subsequent commands will revert to using the system's default language for output.
+      The <code>locale</code> command can be used to determine the current value of <varname>LANG</varname> and other related environment variables.
+    </para>
+
+    <formalpara>
+      <title>Input Method Settings</title>
+      <para>
+        GNOME&nbsp;3 in Red&nbsp;Hat Enterprise&nbsp;Linux&nbsp;7 or later automatically uses the <application>IBus</application> input method selection system, which makes it easy to change keyboard layouts and input methods quickly.
+      </para>
+    </formalpara>
+
+    <para>
+      The <application>Region &amp; Language</application> application can also be used to enable alternative input methods.
+      In the <application>Region &amp; Language</application> application window, the <guilabel>Input Sources</guilabel> box shows what input methods are currently available.
+      By default, <guilabel>English (US)</guilabel> may be the only available method.
+      Highlight <guilabel>English (US)</guilabel> and click the <guibutton>keyboard</guibutton> icon to see the current keyboard layout.
+    </para>
+
+    <para>
+      To add another input method, click the <guibutton>+</guibutton> button at the bottom left of the <guilabel>Input Sources</guilabel> window.
+      An <guilabel>Add an Input Source</guilabel> window displays.
+      Select your language, and then your preferred input method or keyboard layout.
+    </para>
+
+    <para>
+      When more than one input method is configured, the user can switch between them quickly by typing <keycombo><keycap>Super</keycap><keycap>Space</keycap></keycombo> (sometimes called <keycombo><keycap>Windows</keycap><keycap>Space</keycap></keycombo>).
+      A <firstterm>status indicator</firstterm> will also appear in the GNOME top bar, which has two functions: It indicates which input method is active, and acts as a menu that can be used to switch between input methods or select advanced features of more complex input methods.
+    </para>
+
+    <para>
+      Some of the methods are marked with gear icons, which indicate that those methods have advanced configuration options and capabilities.
+      For example, the Japanese <guilabel>Japanese (Kana Kanji)</guilabel> input method allows the user to pre-edit text in Latin and use <keycap>Down Arrow</keycap> and <keycap>Up Arrow</keycap> keys to select the correct characters to use.
+    </para>
+
+    <para>
+      US English speakers may also find this useful.
+      For example, under <guilabel>English (United States)</guilabel> is the keyboard layout <guilabel>English (international AltGr dead keys)</guilabel>, which treats <keycap>AltGr</keycap> (or the right <keycap>Alt</keycap>) on a PC 104/105-key keyboard as a &quot;secondary shift&quot; modifier key and dead key activation key for typing additional characters.
+      There are also Dvorak and other alternative layouts available.
+    </para>
+
+    <note>
+      <para>
+        Any Unicode character can be entered in the GNOME desktop environment if you know the character's Unicode code point.
+        Type <keycombo> <keycap>Ctrl</keycap> <keycap>Shift</keycap> <keycap>U</keycap> </keycombo>, followed by the code point.
+        After <keycombo> <keycap>Ctrl</keycap> <keycap>Shift</keycap> <keycap>U</keycap> </keycombo> has been typed, an underlined <code>u</code> character displays, indicating that the system is waiting for Unicode code point entry.
+      </para>
+      <para>
+        For example, the lowercase Greek letter lambda has the code point U+03BB, and can be entered by typing <keycombo> <keycap>Ctrl</keycap> <keycap>Shift</keycap> <keycap>U</keycap> </keycombo>, then <code>03BB</code>, then <keycap>Enter</keycap>.
+      </para>
+    </note>
+  </section>
+
+  <section>
+    <title>System-wide Default Language Settings</title>
+
+    <para>
+      The system's default language is set to US English, using the UTF-8 encoding of Unicode as its character set (<code>en_US.utf8</code>), but this can be changed during or after installation.
+    </para>
+
+    <para>
+      From the command line, the <code>root</code> user can change the system-wide locale settings with the <code>localectl</code> command.
+      If <code>localectl</code> is run with no arguments, it displays the current system-wide locale settings.
+    </para>
+
+    <para>
+      To set the system-wide default language, run the command <code>localectl set-locale LANG=<replaceable>locale</replaceable></code>, where <replaceable>locale</replaceable> is the appropriate value for the <varname>LANG</varname> environment variable from the "Language Codes Reference" table in this chapter.
+      The change will take effect for users on their next login, and is stored in <code>/etc/locale.conf</code>.
+    </para>
+
+<screen><prompt>[root@host ~]# </prompt><userinput>localectl set-locale LANG=fr_FR.utf8</userinput></screen>
+
+    <para>
+      In GNOME, an administrative user can change this setting from <application>Region &amp; Language</application> by clicking the <guibutton>Login Screen</guibutton> button at the upper-right corner of the window.
+      Changing the <guilabel>Language</guilabel> of the graphical login screen will also adjust the system-wide default language setting stored in the <code>/etc/locale.conf</code> configuration file.
+    </para>
+
+    <important>
+      <para>
+        Text-based virtual consoles such as <code>tty4</code> are more limited in the fonts they can display than terminals in a virtual console running a graphical environment, or pseudoterminals for <code>ssh</code> sessions.
+        For example, Japanese, Korean, and Chinese characters may not display as expected on a text-based virtual console.
+        For this reason, you should consider using English or another language with a Latin character set for the system-wide default.
+      </para>
+      <para>
+        Likewise, text-based virtual consoles are more limited in the input methods they support, and this is managed separately from the graphical desktop environment.
+        The available global input settings can be configured through <code>localectl</code> for both text-based virtual consoles and the graphical environment.
+        See the <code>localectl</code>(1) and <code>vconsole.conf</code>(5) man pages for more information.
+      </para>
+    </important>
+  </section>
+
+  <section>
+    <title>Language Packs</title>
+
+    <para>
+      Special RPM packages called <firstterm>langpacks</firstterm> install language packages that add support for specific languages.
+      These langpacks use dependencies to automatically install additional RPM packages containing localizations, dictionaries, and translations for other software packages on your system.
+    </para>
+
+    <para>
+      To list the langpacks that are installed and that may be installed, use <code>yum list langpacks-*</code>:
+    </para>
+
+<screen><prompt>[root@host ~]# </prompt><userinput>yum list langpacks-*</userinput>
+Updating Subscription Management repositories.
+Updating Subscription Management repositories.
+Installed Packages
+langpacks-en.noarch      1.0-12.el8        @AppStream
+Available Packages
+langpacks-af.noarch      1.0-12.el8        rhel-8-for-x86_64-appstream-rpms
+langpacks-am.noarch      1.0-12.el8        rhel-8-for-x86_64-appstream-rpms
+langpacks-ar.noarch      1.0-12.el8        rhel-8-for-x86_64-appstream-rpms
+langpacks-as.noarch      1.0-12.el8        rhel-8-for-x86_64-appstream-rpms
+langpacks-ast.noarch     1.0-12.el8        rhel-8-for-x86_64-appstream-rpms
+<emphasis>...output omitted...</emphasis></screen>
+
+    <para>
+      To add language support, install the appropriate langpacks package.
+      For example, the following command adds support for French:
+    </para>
+
+<screen><prompt>[root@host ~]# </prompt><userinput>yum install langpacks-fr</userinput></screen>
+
+    <para>
+      Use <code>yum repoquery --whatsupplements</code> to determine what RPM packages may be installed by a langpack:
+    </para>
+
+<screen><prompt>[root@host ~]# </prompt><userinput>yum repoquery --whatsupplements langpacks-fr</userinput>
+Updating Subscription Management repositories.
+Updating Subscription Management repositories.
+Last metadata expiration check: 0:01:33 ago on Wed 06 Feb 2019 10:47:24 AM CST.
+glibc-langpack-fr-0:2.28-18.el8.x86_64
+gnome-getting-started-docs-fr-0:3.28.2-1.el8.noarch
+hunspell-fr-0:6.2-1.el8.noarch
+hyphen-fr-0:3.0-1.el8.noarch
+libreoffice-langpack-fr-1:6.0.6.1-9.el8.x86_64
+man-pages-fr-0:3.70-16.el8.noarch
+mythes-fr-0:2.3-10.el8.noarch</screen>
+
+    <important>
+      <para>
+        Langpacks packages use RPM <firstterm>weak dependencies</firstterm> in order to install supplementary packages only when the core package that needs it is also installed.
+      </para>
+      <para>
+        For example, when installing <package>langpacks-fr</package> as shown in the preceding examples, the <package>mythes-fr</package> package will only be installed if the <package>mythes</package> thesaurus is also installed on the system.
+      </para>
+      <para>
+        If <package>mythes</package> is subsequently installed on that system, the <package>mythes-fr</package> package will also automatically be installed due to the weak dependency from the already installed <package>langpacks-fr</package> package.
+      </para>
+    </important>
+
+    <note role="References">
+      <para>
+        <code>locale</code>(7), <code>localectl</code>(1), <code>locale.conf</code>(5), <code>vconsole.conf</code>(5), <code>unicode</code>(7), and <code>utf-8</code>(7) man pages
+      </para>
+      <para>
+        Conversions between the names of the graphical desktop environment's X11 layouts and their names in <code>localectl</code> can be found in the file <code>/usr/share/X11/xkb/rules/base.lst</code>.
+      </para>
+    </note>
+  </section>
+
+  <!-- bending the tagging rules slightly so this table is always all on one
+    page for ILT and is also included with the i18n content -->
+
+  <section>
+    <title>Language Codes Reference</title>
+
+    <note>
+      <para>
+        This table might not reflect all langpacks available on your system.
+        Use <code>yum info langpacks-<replaceable>SUFFIX</replaceable></code> to get more information about any particular langpacks package.
+      </para>
+    </note>
+
+    <table frame="all">
+      <title>Language Codes</title>
+      <tgroup cols="3" align="left" colsep="1" rowsep="1">
+        <colspec colname="c1" colnum="1" colwidth="2.0*"/>
+        <colspec colname="c2" colnum="2" colwidth="1.0*"/>
+        <colspec colname="c2" colnum="3" colwidth="1.0*"/>
+        <thead>
+          <row>
+            <entry>
+              Language
+            </entry>
+            <entry>
+              Langpacks Suffix
+            </entry>
+            <entry>
+              $LANG value
+            </entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry>
+              English (US)
+            </entry>
+            <entry>
+              en
+            </entry>
+            <entry>
+              en_US.utf8
+            </entry>
+          </row>
+          <row>
+            <entry>
+              Assamese
+            </entry>
+            <entry>
+              as
+            </entry>
+            <entry>
+              as_IN.utf8
+            </entry>
+          </row>
+          <row>
+            <entry>
+              Bengali
+            </entry>
+            <entry>
+              bn
+            </entry>
+            <entry>
+              bn_IN.utf8
+            </entry>
+          </row>
+          <row>
+            <entry>
+              Chinese (Simplified)
+            </entry>
+            <entry>
+              zh_CN
+            </entry>
+            <entry>
+              zh_CN.utf8
+            </entry>
+          </row>
+          <row>
+            <entry>
+              Chinese (Traditional)
+            </entry>
+            <entry>
+              zh_TW
+            </entry>
+            <entry>
+              zh_TW.utf8
+            </entry>
+          </row>
+          <row>
+            <entry>
+              French
+            </entry>
+            <entry>
+              fr
+            </entry>
+            <entry>
+              fr_FR.utf8
+            </entry>
+          </row>
+          <row>
+            <entry>
+              German
+            </entry>
+            <entry>
+              de
+            </entry>
+            <entry>
+              de_DE.utf8
+            </entry>
+          </row>
+          <row>
+            <entry>
+              Gujarati
+            </entry>
+            <entry>
+              gu
+            </entry>
+            <entry>
+              gu_IN.utf8
+            </entry>
+          </row>
+          <row>
+            <entry>
+              Hindi
+            </entry>
+            <entry>
+              hi
+            </entry>
+            <entry>
+              hi_IN.utf8
+            </entry>
+          </row>
+          <row>
+            <entry>
+              Italian
+            </entry>
+            <entry>
+              it
+            </entry>
+            <entry>
+              it_IT.utf8
+            </entry>
+          </row>
+          <row>
+            <entry>
+              Japanese
+            </entry>
+            <entry>
+              ja
+            </entry>
+            <entry>
+              ja_JP.utf8
+            </entry>
+          </row>
+          <row>
+            <entry>
+              Kannada
+            </entry>
+            <entry>
+              kn
+            </entry>
+            <entry>
+              kn_IN.utf8
+            </entry>
+          </row>
+          <row>
+            <entry>
+              Korean
+            </entry>
+            <entry>
+              ko
+            </entry>
+            <entry>
+              ko_KR.utf8
+            </entry>
+          </row>
+          <row>
+            <entry>
+              Malayalam
+            </entry>
+            <entry>
+              ml
+            </entry>
+            <entry>
+              ml_IN.utf8
+            </entry>
+          </row>
+          <row>
+            <entry>
+              Marathi
+            </entry>
+            <entry>
+              mr
+            </entry>
+            <entry>
+              mr_IN.utf8
+            </entry>
+          </row>
+          <row>
+            <entry>
+              Odia
+            </entry>
+            <entry>
+              or
+            </entry>
+            <entry>
+              or_IN.utf8
+            </entry>
+          </row>
+          <row>
+            <entry>
+              Portuguese (Brazilian)
+            </entry>
+            <entry>
+              pt_BR
+            </entry>
+            <entry>
+              pt_BR.utf8
+            </entry>
+          </row>
+          <row>
+            <entry>
+              Punjabi
+            </entry>
+            <entry>
+              pa
+            </entry>
+            <entry>
+              pa_IN.utf8
+            </entry>
+          </row>
+          <row>
+            <entry>
+              Russian
+            </entry>
+            <entry>
+              ru
+            </entry>
+            <entry>
+              ru_RU.utf8
+            </entry>
+          </row>
+          <row>
+            <entry>
+              Spanish
+            </entry>
+            <entry>
+              es
+            </entry>
+            <entry>
+              es_ES.utf8
+            </entry>
+          </row>
+          <row>
+            <entry>
+              Tamil
+            </entry>
+            <entry>
+              ta
+            </entry>
+            <entry>
+              ta_IN.utf8
+            </entry>
+          </row>
+          <row>
+            <entry>
+              Telugu
+            </entry>
+            <entry>
+              te
+            </entry>
+            <entry>
+              te_IN.utf8
+            </entry>
+          </row>
+          <!--
+            <row><entry namest="c1" nameend="c3"><emphasis>Technology Previews</emphasis></entry></row>
+            <row><entry>Maithili</entry><entry>mai_IN.utf8</entry><entry>maithili-support</entry></row>
+            <row><entry>Nepali</entry><entry>ne_NP.utf8</entry><entry>nepali-support</entry></row>
+            <row><entry>Sinhala</entry><entry>si_LK.utf8</entry><entry>sinhala-support</entry></row> -->
+        </tbody>
+      </tgroup>
+    </table>
+  </section>
+</section>

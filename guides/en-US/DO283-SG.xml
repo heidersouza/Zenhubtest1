@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- This document was created with Syntext Serna Free. -->
+<!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % common_entities SYSTEM "common.ent" >
+%common_entities;
+]>
+<!-- Modify id using course sku. -->
+<book id="DO283-SG">
+  <!-- DO NOT TOUCH -->
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Book_Info.xml"/>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Common/Conventions.xml"/>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Course_Preface.xml"/>
+  <!-- Begin adding  your own chapters here -->
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="sg-chapters/start.xml"/>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="sg-chapters/implement.xml"/>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="sg-chapters/deploy.xml"/>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="sg-chapters/apps.xml"/>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="sg-chapters/test.xml"/>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="sg-chapters/tolerance.xml"/>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="sg-chapters/gateway.xml"/>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="sg-chapters/secure.xml"/>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="sg-chapters/monitor.xml"/>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="sg-chapters/comprehensive.xml"/>
+  <!-- appendices (normally should not exist) -->
+</book>

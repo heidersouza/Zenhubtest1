@@ -1,0 +1,157 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % common_entities SYSTEM "../../../common.ent">
+%common_entities;
+]>
+
+<section>
+  <!-- DO NOT ADD AN ID to the section HERE
+        - the template takes care of correct providing the correct ID. -->
+
+  <title>Multiple Choice Sample Title</title>
+
+  <task role="MultChoice">
+  <!-- DO NOT add an ID to this task; the template takes care of it for you. -->
+
+  <!-- Multiple-choice items allow valid, reliable, and economical measurement of a
+          wide range of content in a relatively short testing time.
+       Multiple-choice questions, while harder to write, tend to be more effective
+          than matching questions when you need to test a student's ability to
+          interpret facts, evaluate situations, explain cause and effect, make
+          inferences, and predict results.
+       For a deeper explanation, review the standards for writing quizzes in the
+          Content Services guide:
+             "Write a Quiz": https://mojo.redhat.com/groups/gls-content-services/content?filterID=contentstatus[published]~category[1-design-a-course-guidelines-for-planning-designing-and-writing-a-course]
+  -->
+
+    <title>This title is ignored - there is no need to change</title>
+
+    <tasksummary>
+      <para>
+        Choose the correct answers to the following questions:
+      </para>
+      <!--  <para condition="role"> When you have completed the quiz, click <guibutton>check</guibutton>.
+          If you want to try again, click <guibutton>reset</guibutton>. Click
+          <guibutton>show solution</guibutton> to see all of the correct answers. </para>-->
+    </tasksummary>
+
+    <procedure>
+      <step>
+        <qandaset>
+          <!--  Question with one correct answer-->
+          <qandaentry role="multi-radio" id='change-me-to-something-unique'>
+            <!-- qandaentry tag should have id that is short version of topic -->
+            <question>
+              <para>
+                The designer needs to limit the chart display to the set of products that contribute 20 percent of the total sales using the top contributors.
+              </para>
+            </question>
+            <answer>
+              <para>
+                Show only values that are <guilabel>Greater Than or Equal To</guilabel> 20 percent and select the <guilabel>Show Total</guilabel> check box.
+              </para>
+            </answer>
+            <answer>
+              <para>
+                Show only <guilabel>First 20 Values</guilabel>, select the <guilabel>Global Grouping Mode</guilabel> check box, and select the <guilabel>Exclude Others</guilabel> check box.
+              </para>
+            </answer>
+            <answer role="solution">
+              <para>
+                Show only values that accumulate to 20 percent and <guilabel>Use Largest Values</guilabel> and select the <guilabel>Check Include Boundary Values</guilabel> check box.
+              </para>
+            </answer>
+            <answer>
+              <para>
+                Show only <guilabel>Largest 20 Values</guilabel> and select the <guilabel>Show Others</guilabel> check box.
+              </para>
+            </answer>
+          </qandaentry>
+        </qandaset>
+      </step>
+      <!--  Question with more than one correct answer.
+      Indicate how many choices at end of question.-->
+      <step>
+        <qandaset>
+          <qandaentry role="multi-check" id='change-me-to-something-unique'>
+            <question>
+              <para>
+                Based on the Linux partition naming system, which of the following two device names point to "logical" partitions (assuming the corresponding partitions exist at all on the system in question)? (Choose two.)
+              </para>
+            </question>
+            <answer>
+              <para>
+                <code>/dev/sda3</code>
+              </para>
+            </answer>
+            <answer>
+              <para>
+                <code>/dev/fd0</code>
+              </para>
+            </answer>
+            <answer role="solution">
+              <para>
+                <code>/dev/hdb7</code>
+              </para>
+            </answer>
+            <answer>
+              <para>
+                <code>/dev/hda4</code>
+              </para>
+            </answer>
+            <answer>
+              <para>
+                <code>/dev/fd7</code>
+              </para>
+            </answer>
+            <answer role="solution">
+              <para>
+                <code>/dev/sdc11</code>
+              </para>
+            </answer>
+          </qandaentry>
+        </qandaset>
+      </step>
+      <!--  Question with an exhibit and more than one answer. -->
+      <step>
+        <qandaset>
+          <qandaentry role="multi-check" id='change-me-to-something-unique'>
+            <question>
+              <para>
+                Given the structure of the <code>marks</code> table in the below exhibit, which two statements would execute successfully? (Choose two.)
+              </para>
+<screen> Name          Null?      Type
+ ----------    -------    --------
+ STUDENT_ID    NOT NULL   VARCHAR2(4)
+ STUDENT_NAME             VARCHAR2(25)
+ SUBJECT1                 NUMBER(3)
+ SUBJECT2                 NUMBER(3)
+ SUBJECT3                 NUMBER(3)</screen>
+            </question>
+            <answer>
+              <para>
+                <code>SELECT student_name, subject1 FROM marks WHERE subject1 &gt; AVG(subject1);</code>
+              </para>
+            </answer>
+            <answer>
+              <para>
+                <code>SELECT student_name, SUM(subject1) FROM marks WHERE student_name LIKE ‘R%’;</code>
+              </para>
+            </answer>
+            <answer role="solution">
+              <para>
+                <code>SELECT SUM (subject1+subject2+subject3) FROM marks WHERE student_name is NULL;</code>
+              </para>
+            </answer>
+            <answer role="solution">
+              <para>
+                <code>SELECT SUM (DISTINCT NVL(subject1,0)), MAX(subject1) FROM marks WHERE subject1 &gt; subject2;</code>
+              </para>
+            </answer>
+          </qandaentry>
+        </qandaset>
+      </step>
+    </procedure>
+  </task>
+</section>
