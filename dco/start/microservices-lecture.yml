@@ -1,0 +1,28 @@
+---
+
+arch_notes: tbd
+
+category: lecture
+
+chapter_number_text: "#NAME?"
+
+minutes: 30
+
+objectives:
+  - 'define what a microservice is and the guiding principles for their creation.'
+
+references: []
+
+section_word: microservices
+
+stage: draft
+
+status: complete
+
+title: 'Describing Agile'
+
+topics: "* Definition* Technology Trends/Reasons for adoption* Micro vs. monolithic*\
+  \ Principles for successful adoption* Complexities vs. Benefits* Principles of sound\
+  \ MS architecture"
+
+type: lecture

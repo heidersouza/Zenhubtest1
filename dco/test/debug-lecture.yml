@@ -1,0 +1,26 @@
+---
+
+arch_notes: tbd
+
+category: lecture
+
+chapter_number_text: "#NAME?"
+
+minutes: 15
+
+objectives:
+  - "-"
+
+references: []
+
+section_word: debug
+
+stage: draft
+
+status: complete
+
+title: 'Debugging Quarkus Applications'
+
+topics: tbd
+
+type: lecture

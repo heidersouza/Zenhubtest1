@@ -1,0 +1,28 @@
+---
+
+arch_notes: 'This section needs to be completely changed since we are moving away
+  from fabric8'
+
+category: lecture
+
+chapter_number_text: "#NAME?"
+
+minutes: 30
+
+objectives:
+  - 'deploy a microservice to OpenShift.'
+
+references: []
+
+section_word: openshift
+
+stage: draft
+
+status: complete
+
+title: 'Deploying a Microservice on OpenShift'
+
+topics: "*Creating an image for quarkus*Scaling a Quarkus app*Service Discovery*generating\
+  \ kubernetes resources with Quarkus"
+
+type: lecture

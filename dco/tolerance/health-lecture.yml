@@ -1,0 +1,27 @@
+---
+
+arch_notes: tbd
+
+category: lecture
+
+chapter_number_text: "#NAME?"
+
+minutes: 20
+
+objectives:
+  - 'implement a health check in a microservice and enable a probe in OpenShift to
+    monitor it.'
+
+references: []
+
+section_word: health
+
+stage: draft
+
+status: complete
+
+title: 'Implementing a Health Check Monitored by OpenShift'
+
+topics: tbd
+
+type: lecture

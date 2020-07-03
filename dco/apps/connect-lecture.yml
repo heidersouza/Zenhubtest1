@@ -1,0 +1,28 @@
+---
+
+arch_notes: 'Formerly chapter 5'
+
+category: lecture
+
+chapter_number_text: "#NAME?"
+
+minutes: 20
+
+objectives:
+  - 'use service discovery to connect multiple services to each other.'
+
+references: []
+
+section_word: connect
+
+stage: draft
+
+status: complete
+
+title: 'Connecting Multiple Services'
+
+topics: "* What is a service* What is the service URL convention (in same project,\
+  \ across projects)* Only available on the same cluster otherwise use a route* How\
+  \ to locate service information on web console"
+
+type: lecture

@@ -1,0 +1,26 @@
+---
+
+arch_notes: tbd
+
+category: lecture
+
+chapter_number_text: "#NAME?"
+
+minutes: 30
+
+objectives:
+  - 'implement a microservice test case using Junit.'
+
+references: []
+
+section_word: junit
+
+stage: draft
+
+status: complete
+
+title: 'Testing Microservices with JUnit'
+
+topics: tbd
+
+type: lecture

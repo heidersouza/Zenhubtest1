@@ -1,0 +1,26 @@
+---
+
+arch_notes: 'Consider this section for dropping!'
+
+category: lecture
+
+chapter_number_text: "#NAME?"
+
+minutes: 30
+
+objectives:
+  - 'implement a microservice test using mock frameworks.'
+
+references: []
+
+section_word: mock
+
+stage: draft
+
+status: complete
+
+title: 'Testing Microservices with Mock Frameworks'
+
+topics: tbd
+
+type: lecture

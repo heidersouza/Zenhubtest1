@@ -1,0 +1,36 @@
+---
+
+arch_notes: "* We need to revisit this one. Not sure we want to reuse this app or\
+  \ use the adopt a pup or other app. Needs to be updated to use OCP 4 deployment\
+  \ flow using the catalog in the UI"
+
+category: lecture
+
+chapter_number_text: "#NAME?"
+
+minutes: 40
+
+objectives:
+  - 'deploy a microservice'
+
+references: []
+
+section_word: service
+
+stage: draft
+
+status: complete
+
+title: 'Deploying a Quarkus Microservice'
+
+topics: "* Introduce the MP Conference application with diagram of all the components,\
+
+  \ screenshots, etc.* Introduce the Speaker microservice: JAX-RS implementation,\
+  \ mention data comes from a bootstrap source for simplicity* Briefly discuss how\
+
+  \ an application runs in a container and on Kubernetes: pod, service, route; a sort\
+  \ of OCP 101 * Deploy using S2I on the OCP web console* Tour of most important parts\
+  \ of the OCP web console (Overview, clicking on a route, seeing if the service is\
+  \ running)"
+
+type: lecture

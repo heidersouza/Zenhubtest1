@@ -1,0 +1,26 @@
+---
+
+arch_notes: tbd
+
+category: lecture
+
+chapter_number_text: "#NAME?"
+
+minutes: 30
+
+objectives:
+  - 'secure a microservice endpoint using JWT authentication and authorization.'
+
+references: []
+
+section_word: tls
+
+stage: draft
+
+status: complete
+
+title: 'Securing a Microservice Endpoint'
+
+topics: tbd
+
+type: lecture

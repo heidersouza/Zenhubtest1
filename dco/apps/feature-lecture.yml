@@ -1,0 +1,29 @@
+---
+
+arch_notes: tbd
+
+category: lecture
+
+chapter_number_text: "#NAME?"
+
+minutes: 20
+
+objectives:
+  - 'implement configurable feature toggles in microservices.'
+
+references: []
+
+section_word: feature
+
+stage: draft
+
+status: complete
+
+title: 'Implementing Feature Toggles'
+
+topics: "* Introduce how we integrate with front ends with our microservice apps.\
+  \ (We don't need to be language specific for the front end tech, but just what do\
+  \ students need to be aware of at a high level).* Feature toggles* Configure features\
+  \ using external configs"
+
+type: lecture

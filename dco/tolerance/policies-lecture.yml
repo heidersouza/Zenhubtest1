@@ -1,0 +1,26 @@
+---
+
+arch_notes: tbd
+
+category: lecture
+
+chapter_number_text: "#NAME?"
+
+minutes: 25
+
+objectives:
+  - 'apply fault tolerance policies to a Microservice.'
+
+references: []
+
+section_word: policies
+
+stage: draft
+
+status: complete
+
+title: 'Applying Fault Tolerance Policies to a Microservice'
+
+topics: tbd
+
+type: lecture

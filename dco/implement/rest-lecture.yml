@@ -1,0 +1,30 @@
+---
+
+arch_notes: 'This is pretty out of date. MP 3.2 is out now. See https://download.eclipse.org/microprofile/microprofile-3.2/microprofile-spec-3.2.html'
+
+category: lecture
+
+chapter_number_text: "#NAME?"
+
+minutes: 20
+
+objectives:
+  - 'implement a microservice using the CDI, JAX-RS, and JSON-P specifications of
+    MicroProfile.'
+
+references: []
+
+section_word: rest
+
+stage: draft
+
+status: complete
+
+title: 'Implementing a Microservice with CDI, JAX-RS, and JSON-P'
+
+topics: "* What's new in CDI 2, JAX-RS 2.1* What is JSON-P 1.0 and how does it work:\
+  \ JsonObject, JsonArray, JsonReader, JsonReaderFactory, JsonValue* Orientation to\
+  \ IDE and dev environment (VSCode. If we do CRW, we need to create a separate section\
+  \ all about that)"
+
+type: lecture

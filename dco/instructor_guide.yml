@@ -1,0 +1,18 @@
+---
+
+instructor_guide:
+
+  chapter_conclusion_minutes: 3
+
+  chapter_intro_minutes: 2
+
+  course_intro_minutes: 2
+
+  i18n_minutes: 10
+
+  ilt_days: 3
+
+  ilt_minutes_per_day: 390
+
+  purpose: 'These entries affect timings in the Instructor Guide.[This is needed in
+    the "Sheet" to work around a current bug]'

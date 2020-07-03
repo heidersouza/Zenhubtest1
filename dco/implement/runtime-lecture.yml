@@ -1,0 +1,31 @@
+---
+
+arch_notes: 'Note, this chapter was originally chapter 3, now is chapter 2'
+
+category: lecture
+
+chapter_number_text: "#NAME?"
+
+minutes: 25
+
+objectives:
+  - 'describe the features of Quarkus.'
+
+references: []
+
+section_word: runtime
+
+stage: draft
+
+status: complete
+
+title: 'Describing Quarkus as a Microservice Runtime'
+
+topics: "* Brief history of MicroProfile and Wildfly --> Quarkus* Introduction about\
+  \ Quarkus, what are its benefits and which specifications are included. (live reload,\
+  \ etc)*Brief mention of reactive programming. We aren't going to use reactive in\
+  \ this course, but it is a selling point of Quarkus* What makes quarkus ideal for\
+  \ a cloud-based microservice architecture?* How does Quarkus compare with Spring\
+  \ Boot/Vert.x? What are its advantages over these runtimes?*Native vs JVM"
+
+type: lecture

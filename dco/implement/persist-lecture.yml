@@ -1,0 +1,26 @@
+---
+
+arch_notes: tbd
+
+category: lecture
+
+chapter_number_text: "#NAME?"
+
+minutes: 40
+
+objectives:
+  - 'persist data with simplified Panache Entities'
+
+references: []
+
+section_word: persist
+
+stage: draft
+
+status: complete
+
+title: 'Persisting Data with Panache'
+
+topics: tbd
+
+type: lecture

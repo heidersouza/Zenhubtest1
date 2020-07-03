@@ -1,0 +1,24 @@
+---
+
+arch_notes: 'Needs quarkus migrationDemonstrate live quarkus reload'
+
+category: activity
+
+chapter_number_text: "#NAME?"
+
+minutes: 20
+
+references: []
+
+section_word: rest
+
+stage: draft
+
+status: complete
+
+title: 'Implementing a RESTful Microservice'
+
+topics: "* Can we demonstrate live reloading here?* We also need to treat students\
+  \ as if this is their first time using VSCode"
+
+type: GE

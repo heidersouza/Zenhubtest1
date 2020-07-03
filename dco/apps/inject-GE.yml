@@ -1,0 +1,23 @@
+---
+
+arch_notes: 'Formerly chapter 5'
+
+category: activity
+
+chapter_number_text: "#NAME?"
+
+minutes: 20
+
+references: []
+
+section_word: inject
+
+stage: draft
+
+status: complete
+
+title: 'Injecting Configuration Data '
+
+topics: "* Can we demonstrate live reloading here with config data?"
+
+type: GE

@@ -1,0 +1,26 @@
+---
+
+arch_notes: tbd
+
+category: lecture
+
+chapter_number_text: "#NAME?"
+
+minutes: 20
+
+objectives:
+  - 'implement a microservice that generates a JSON web token.'
+
+references: []
+
+section_word: jwt
+
+stage: draft
+
+status: complete
+
+title: 'Implementing a JSON Web Token Generator'
+
+topics: tbd
+
+type: lecture

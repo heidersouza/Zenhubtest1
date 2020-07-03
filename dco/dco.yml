@@ -1,0 +1,119 @@
+---
+
+appendices: []
+
+chapters:
+
+  - chapter_word: start
+    goal: 'Describe general overvil and patterns of Agile architecture.'
+    is_compreview: no
+    section_files:
+      - microservices-lecture.yml
+      - microservices-quiz.yml
+      - architecture-lecture.yml
+      - architecture-quiz.yml
+      - credentials-GE.yml
+    title: 'Describing a Agile team/company/enterprise'
+
+  - chapter_word: implement
+    goal: 'Implement agile into an organization'
+    is_compreview: no
+    section_files:
+      - runtime-lecture.yml
+      - runtime-quiz.yml
+      - rest-lecture.yml
+      - rest-GE.yml
+      - persist-lecture.yml
+      - persist-GE.yml
+      - review-lab.yml
+    title: 'Implementing Agile'
+
+  - chapter_word: deploy
+    goal: 'Deploy an Agile project.'
+    is_compreview: no
+    section_files:
+      - service-lecture.yml
+      - service-GE.yml
+      - openshift-lecture.yml
+      - openshift-GE.yml
+      - review-lab.yml
+    title: 'Deploying Agile project'
+
+  - chapter_word: apps
+    goal: 'Building teams, their phases and their progress'
+    is_compreview: no
+    section_files:
+      - connect-lecture.yml
+      - connect-GE.yml
+      - inject-lecture.yml
+      - inject-GE.yml
+      - feature-lecture.yml
+      - feature-GE.yml
+      - review-lab.yml
+    title: 'Building software/HR/Team with Agile'
+
+  - chapter_word: test
+    goal: 'Implement tests into development and milestoes of checking progress'
+    is_compreview: no
+    section_files:
+      - junit-lecture.yml
+      - junit-GE.yml
+      - mock-lecture.yml
+      - mock-GE.yml
+      - debug-lecture.yml
+      - debug-GE.yml
+      - review-lab.yml
+    title: 'Testing with Agile methods'
+
+  - chapter_word: tolerance
+    goal: 'Implement a "tolerance" for mistakes, errors and "impossible" goals'
+    is_compreview: no
+    section_files:
+      - policies-lecture.yml
+      - policies-GE.yml
+      - health-lecture.yml
+      - health-GE.yml
+      - review-lab.yml
+    title: 'Implementing Structure'
+
+  - chapter_word: gateway
+    goal: 'Describe the importance of having a structure/cadence/ritm and disciplice
+      to achieve ultimate creativity'
+    is_compreview: no
+    section_files:
+      - pattern-lecture.yml
+      - pattern-quiz.yml
+      - develop-lecture.yml
+      - develop-GE.yml
+      - review-lab.yml
+    title: 'Developing Structure'
+
+  - chapter_word: secure
+    goal: 'Secure the ways towards developin the Agile proposal.'
+    is_compreview: no
+    section_files:
+      - jwt-lecture.yml
+      - jwt-GE.yml
+      - tls-lecture.yml
+      - tls-GE.yml
+      - review-lab.yml
+    title: 'Securing Agile over time'
+
+  - chapter_word: monitor
+    goal: 'Monitor progression and ways to oversee.'
+    is_compreview: no
+    section_files:
+      - metrics-lecture.yml
+      - metrics-GE.yml
+      - log-lecture.yml
+      - log-quiz.yml
+      - review-lab.yml
+    title: 'Monitoring Agile'
+
+  - chapter_word: comprehensive
+    goal: 'Build any structure as agile.'
+    is_compreview: yes
+    section_files:
+      - review-compreview.yml
+      - review-lab.yml
+    title: 'Comprehensive Review of Agile'

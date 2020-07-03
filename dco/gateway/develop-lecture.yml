@@ -1,0 +1,26 @@
+---
+
+arch_notes: tbd
+
+category: lecture
+
+chapter_number_text: "#NAME?"
+
+minutes: 30
+
+objectives:
+  - 'develop an API gateway for a series of microservices.'
+
+references: []
+
+section_word: develop
+
+stage: draft
+
+status: complete
+
+title: 'Developing an API Gateway for Microservices'
+
+topics: tbd
+
+type: lecture

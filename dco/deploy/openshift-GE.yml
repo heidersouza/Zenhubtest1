@@ -1,0 +1,23 @@
+---
+
+arch_notes: 'Needs to be completely changed since we arent using fabric8.'
+
+category: activity
+
+chapter_number_text: "#NAME?"
+
+minutes: 20
+
+references: []
+
+section_word: openshift
+
+stage: draft
+
+status: complete
+
+title: 'Deploying a Microservice on OpenShift'
+
+topics: tbd
+
+type: GE

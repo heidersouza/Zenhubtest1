@@ -1,0 +1,26 @@
+---
+
+arch_notes: tbd
+
+category: lecture
+
+chapter_number_text: "#NAME?"
+
+minutes: 25
+
+objectives:
+  - 'describe the API Gateway pattern.'
+
+references: []
+
+section_word: pattern
+
+stage: draft
+
+status: complete
+
+title: 'Describing the API Gateway Pattern'
+
+topics: tbd
+
+type: lecture
