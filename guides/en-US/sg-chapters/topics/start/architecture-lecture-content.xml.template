@@ -5,17 +5,17 @@
 ]>
 
 <section>
-  <title>can not be blank, is not included.  Actual title comes from the DCO</title>
+  <title>Where all begings</title>
 
   <section>
-    <title>Sample Included Header 2</title>
+    <title>A little bit of history</title>
     <para>
       Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
       One day a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.
     </para>
 
     <section>
-      <title>Sample Included Header 3</title>
+      <title>It's not easy but it's feasible</title>
       <para>
         The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text did not listen.
         She packed her seven versalia, put her initial into the belt and made herself on the way.
@@ -25,7 +25,7 @@
   </section>
 
   <section>
-    <title>Another included section</title>
+    <title>Keep the hard work</title>
     <para>
       This is a demonstration of including the content.
     </para>
